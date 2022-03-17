@@ -1,54 +1,73 @@
 import React, { Component } from "react";
+import Top from "./bodytop";
+import Business from "./subjects/Business";
+import Computer from "./subjects/ComputerScience";
+import Criminology from "./subjects/criminology";
+import Education from "./subjects/Education";
+import HealthSciences from "./subjects/HealthSciences";
+import Others from "./subjects/Others";
+import Phsychology from "./subjects/Phsychology";
+import Physics from "./subjects/Physics";
+import PoliticalScience from "./subjects/PoliticalScience";
+import Sports from "./subjects/Sports.js";
+
 class Body extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { value: "" };
+  }
+  handleSearch() {}
   render() {
     return (
-      <div>
-        <div className="container">
-          <h1>Academic materials</h1>
-          <p className="fs-5 col-md-8 m-30 text-md-centre">
-            As a student, you’ll need to learn a lot of new information pretty
-            fast or risk being clueless, and more than a bit confused. This is
-            where the internet steps in, a realm of student resources with
-            bountiful information about anything, where you can learn the things
-            you are not taught.. In short, all the student resources you could
-            ever possibly need are available online.This sites offers academic
-            materials ranging from various disciplines. These academic materials
-            are sample materials written by tutours.
-          </p>
-        </div>
+      <div className="bg-dark ">
+        <Top />
+        <div
+          className="container text-light pt-5"
+          style={{ backgroundColor: "olivedrab" }}
+        >
+          {" "}
+          <div className="row g-5 ">
+            <h1 className="text-md-centre">Disciplines </h1>
+            <p className="fs-5 col-md-8 m-30 text-md-centre">
+              There are various disciplines in higher education. These
+              categories are mentioned as listed below.
+            </p>
+            <div className="col-md-6">
+              <ul className="icon-list">
+                <li>Business administration</li>
+                <li>Computer Science</li>
+                <li>Phsychology</li>
+                <li>Electrical engineering</li>
+              </ul>
+            </div>
+            <div className="col-md-6">
+              <ul className="icon-list">
+                <li>Medicine</li>
+                <li>English literature</li>
+                <li>Other business course</li>
+              </ul>
+            </div>
 
-        <hr className="col-3 col-md-2 mb-6" />
-
-        <div className="row g-5 container">
-          <h1 className="text-md-centre">disciplines </h1>
-          <div className="col-md-6">
-            <ul className="icon-list">
-              <li>Business administration</li>
-              <li>Computer Science</li>
-              <li>phsychology</li>
-              <li>electrical engineering</li>
-            </ul>
-          </div>
-          <div className="col-md-6">
-            <ul className="icon-list">
-              <li>medicine</li>
-              <li>english literature</li>
-              <li></li>
-              <li>other business course</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="container">
-          <div className="col-md-6">
-            <h2>Sample projects</h2>
-            <p></p>
-            <ul className="icon-list">
-              <li className="text-muted">Engineering</li>
-              <li className="text-muted">computers science</li>
-            </ul>
+            <p className="fs-5 col-md-8 m-30 text-md-centre">
+              The examples of essays on the above discplines on various topics
+              are given below.
+            </p>
           </div>
         </div>
+        <hr />
+        <Business />
+        <Computer />
+        <Criminology />
+        <Education />
+        <HealthSciences />
+        <Phsychology />
+        <Physics />
+        <PoliticalScience />
+        <Sports />
+        <Others />
+        <queries />
+        <div className="container pt-4"></div>
+        <div className="container pt-4"></div>
       </div>
     );
   }

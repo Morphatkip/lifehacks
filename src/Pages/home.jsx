@@ -1,14 +1,16 @@
 import React, { Component } from "react";
-import Header from "../components/header";
 import Footer from "../components/footer";
 import Body from "../components/body";
+import Form from "../components/Form";
+import Navbar from "../components/Navbar";
 
 class Home extends Component {
   render() {
     return (
       <div>
-        <Header />
+        <Navbar />
         <Body />
+        <Form />
         <Footer />
       </div>
     );

@@ -1,13 +1,12 @@
+import React, { Component } from "react";
 import Header from "../components/header";
-import React, { Component } from 'react'
-
-
+import Footer from "../components/footer";
 class Discipline extends Component {
   render() {
     return (
       <div>
         <Header />
-        <footer />
+        <Footer />
       </div>
     );
   }

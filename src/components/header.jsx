@@ -1,6 +1,22 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { value: "" };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({ value: event.target.value });
+  }
+  handleSubmit(event) {
+    alert("A name was submitted: " + this.state.value);
+    event.preventDefault();
+  }
+
   render() {
     return (
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -35,6 +51,29 @@ class Header extends Component {
                 <Link className="nav-link" to="/Freelancing">
                   Frelancing Sites
                 </Link>
+              </li>
+              <li>
+                <form className="d-flex">
+                  <input
+                    className="form-control me-2"
+                    type="text"
+                    placeholder="Search"
+                    aria-label="Search"
+                    value={this.state.value}
+                    onChange={this.handleChange}
+                  />
+                  <button
+                    className="btn btn-outline-success"
+                    type="submit"
+                    value="submit"
+                    onSubmit={this.handleSubmit}
+                  >
+                    Search
+                  </button>
+                </form>
+              </li>
+              <li>
+                <label>{this.state.value}</label>
               </li>
             </ul>
           </div>
