@@ -27,6 +27,14 @@ function Allegis() {
             hour. It's hard to distinguish the per-hour or per-page rate to a
             per-audio-minute percentage, but you have more options in general.
             <p> Apply today to get the best online transcription job.</p>
+            <p>
+              <br></br>{" "}
+              <a href="https://www.allegistranscription.com/transcription-services/transcription-jobs/">
+                {" "}
+                Allegis{" "}
+              </a>
+              wants you to work in their transcription jobs available today.
+            </p>
           </p>
         </div>
       </div>

@@ -25,8 +25,14 @@ function Speechpad() {
             requirements, and sample transcribing documents can be found at
             Speechpad.com.
           </p>
-          <p></p>
-          <p></p>
+          <p>
+            <br></br> Click here to apply at
+            <a href=" https://www.speechpad.com/worker/jobs/transcribers">
+              {" "}
+              SpeechPad{" "}
+            </a>
+            for the best transcription jobs.
+          </p>
         </div>
       </div>
     </div>

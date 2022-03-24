@@ -25,9 +25,11 @@ function TranscribeMe() {
             spare time to supplement your income. You will, however, be required
             to complete a brief exam to demonstrate your suitability for the
             position. If you pass the exam, you can begin looking for work.
-            <br />
-            <br />
-            <br />
+            <p>
+              <br></br>{" "}
+              <a href=" https://www.transcribeme.com/jobs/"> TranscribeMe </a>
+              got you covered with the latest transcription jobs in the market.
+            </p>
           </p>
         </div>
         <div className="col-md-6">

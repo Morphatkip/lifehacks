@@ -27,7 +27,10 @@ function GoTranscribe() {
             transcribe some test audio files. If you're chosen, you'll hear from
             a spokesperson within a week and can begin working.
           </p>
-          <p></p>
+          <p>
+            <br></br> <a href=" https://gotranscript.com/"> GoTranscribe </a>
+            has many transcription jobs, Apply Today !!
+          </p>
         </div>
       </div>
     </div>

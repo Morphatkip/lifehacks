@@ -28,7 +28,10 @@ function Rev() {
             It's also a method to earn some money while trying out online
             transcribing jobs to see whether you like it.
           </p>
-          <p> Vist Rev website to become a transcriptionist today.</p>
+          <p>
+            <br></br> Visit <a href="https://www.rev.com/"> Rev </a>
+            transcription website today to get transcription jobs today.
+          </p>
         </div>
       </div>
     </div>
