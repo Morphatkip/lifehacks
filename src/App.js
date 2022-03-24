@@ -9,6 +9,7 @@ import Login from "./trial/Signin";
 import Signup from "./trial/Signup";
 import Dashboard from "./components/Dashboard";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Transcription from "./Pages/Transcription";
 import "react-toastify/dist/ReactToastify.css";
 import { UserContextProvider, useUserContext } from "./trial/userContext";
 import Auth from "./trial/auth";
@@ -26,6 +27,7 @@ function App() {
           <Route path="/Account" element={<Account />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Signup" element={<Signup />} />
+          <Route path="/Transcription" element={<Transcription />} />
         </Routes>
       </UserContextProvider>
     </Router>

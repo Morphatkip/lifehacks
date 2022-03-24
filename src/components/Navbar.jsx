@@ -25,6 +25,9 @@ function Navbar() {
           <Link className="nav-link" to="/Freelancing">
             Frelancing sites
           </Link>
+          <Link className="nav-link" to="/Transcription">
+            Transcription
+          </Link>
         </div>
       </div>
       <div className="rightSide">
@@ -33,7 +36,12 @@ function Navbar() {
         </Link>
         <Link className="nav-link" to="/Freelancing">
           Frelancing sites
-        </Link>{" "}
+        </Link>
+        <Link className="nav-link" to="/Transcription">
+            Transcription
+          </Link>
+
+        {" "}
         <button onClick={toggleNavbar}>
           <ReorderIcon />
         </button>
