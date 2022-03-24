@@ -6,10 +6,11 @@ function SimplyHired() {
         <div className="col-md-6">
           <h1>SimplyHired</h1>
           <p>
-            SimplyHired is a free job board where businesses can post job
-            openings. It also aggregates job postings from across the internet
-            onto a single page. The site has a simple user interface that makes
-            it simple to search for jobs by category.
+            <a href="https://www.simplyhired.com/">SimplyHired</a> is a free job
+            board where businesses can post job openings. It also aggregates job
+            postings from across the internet onto a single page. The site has a
+            simple user interface that makes it simple to search for jobs by
+            category.
           </p>
           <p>
             There are numerous freelance opportunities available in a variety of

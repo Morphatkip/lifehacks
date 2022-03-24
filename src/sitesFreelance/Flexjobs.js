@@ -29,6 +29,10 @@ function Flexjobs() {
             PayPal. There is a 30-day satisfaction guarantee, which means that
             if you are dissatisfied with the service, you can get a full refund.
           </p>
+          <br />
+          <a href="https://www.flexjobs.com/jobs">
+            Visit their Flexjobs sites for promising freelance jobs
+          </a>
         </div>
       </div>
     </div>

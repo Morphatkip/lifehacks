@@ -6,10 +6,11 @@ function Upwork() {
         <div className="col-md-6">
           <h1>Upwork</h1>
           <p>
-            Upwork is a platform that links clients and freelancers from all
-            around the world. The platform offers a diverse range of categories,
-            including web design and software development, as well as customer
-            service and accountancy.
+            <a href="https://www.upwork.com/">Upwork</a> is a platform that
+            links clients and freelancers from all around the world. The
+            platform offers a diverse range of categories, including web design
+            and software development, as well as customer service and
+            accountancy.
             <br />
             Clients and freelancers may interact in a variety of ways - clients
             can post a task and recruit talent, or they can purchase a

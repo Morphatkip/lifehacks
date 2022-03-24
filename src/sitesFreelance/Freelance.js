@@ -23,6 +23,11 @@ function Freelance() {
           After completing a job, every freelancer will be paid in full.
           However, for contests and fixed projects, the platform deducts 10% of
           your total earnings.
+          <br />
+          <a href="https://www.freelancer.com/jobs/">
+            {" "}
+            Follow the link to check freelance opportunities in freelancer
+          </a>
         </div>
       </div>
     </div>

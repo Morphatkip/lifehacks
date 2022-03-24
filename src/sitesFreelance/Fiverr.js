@@ -30,6 +30,9 @@ function Fiverr() {
             freelancer's seller level. There are several methods for withdrawing
             funds, including debit card, PayPal, and wire transfer.
           </p>
+          <a href="https://www.fiverr.com/join">
+            Check the freelance available at fiver
+          </a>
         </div>
       </div>
     </div>

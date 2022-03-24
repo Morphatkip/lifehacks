@@ -32,6 +32,10 @@ function Designs() {
             Freelancers are paid via PayPal or Payoneer within three business
             days, and those with higher profile levels are paid sooner.
           </p>
+          <br />
+          <a href="https://99designs.com/">
+            Visit 99designs today for freelance jobs
+          </a>
         </div>
       </div>
     </div>

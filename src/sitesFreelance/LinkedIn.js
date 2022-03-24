@@ -6,10 +6,10 @@ function LinkedIn() {
         <div className="col-md-6">
           <p>
             <h1>LinkedIn</h1>
-            LinkedIn is one of the most prominent job search platforms, making
-            it simple to locate opportunities in a variety of areas. It's also a
-            social networking site where professionals can connect and
-            communicate with one another.
+            <a href="">LinkedIn</a> is one of the most prominent job search
+            platforms, making it simple to locate opportunities in a variety of
+            areas. It's also a social networking site where professionals can
+            connect and communicate with one another.
             <br />
             To get started, simply sign up and establish a profile. Include as
             much information about your abilities, education, and job experience

@@ -32,6 +32,9 @@ function Guru() {
             membership. Paid membership plans, on the other hand, include more
             tools to help your profile stand out.
           </p>{" "}
+          <a href="https://www.guru.com/d/jobs/">
+            Sign up at Guru and start freelancing today !!!
+          </a>
         </div>
       </div>
     </div>

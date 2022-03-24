@@ -27,6 +27,8 @@ function Behance() {
             personalized job recommendation based on their skill sets and
             category, making it easier to find freelance work.
           </p>
+          <br />
+          <a href=""> Visit Behance for great freelance opportunities</a>
         </div>
         <div className="col-md-6">
           <img src={behance} alt="..." className="img-thumbnail"></img>
