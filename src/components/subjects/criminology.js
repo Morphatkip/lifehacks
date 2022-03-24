@@ -9,7 +9,10 @@ function Criminology() {
       <div style={{ margin: 10 }} className=" text-dark">
         <Accordion>
           <Accordion.Item eventKey="0">
-            <Accordion.Header>Ethical dilemma</Accordion.Header>
+            <Accordion.Header>
+              {" "}
+              <h1 style={{ fontSize: 24 }}>Ethical dilemma</h1>{" "}
+            </Accordion.Header>
             <Accordion.Body>
               <p>
                 {" "}
@@ -57,7 +60,10 @@ function Criminology() {
           </Accordion.Item>
 
           <Accordion.Item eventKey="1">
-            <Accordion.Header>Reus of Battery</Accordion.Header>
+            <Accordion.Header>
+              {" "}
+              <h1 style={{ fontSize: 24 }}>Reus of Battery</h1>
+            </Accordion.Header>
             <Accordion.Body>
               <p>
                 Battery is a common-law offense almost related to assault. It

@@ -6,7 +6,9 @@ function History() {
         <Accordion>
           <Accordion.Item eventKey="0">
             <Accordion.Header>
-              The Mexican-American community and the American dream
+              <h1 style={{ fontSize: 24 }}>
+                The Mexican-American community and the American dream
+              </h1>
             </Accordion.Header>
             <Accordion.Body>
               <p>
@@ -127,7 +129,9 @@ function History() {
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">
-            <Accordion.Header>Native Americans</Accordion.Header>
+            <Accordion.Header>
+              <h1 style={{ fontSize: 24 }}>Native Americans</h1>
+            </Accordion.Header>
             <Accordion.Body>
               <p>
                 {" "}

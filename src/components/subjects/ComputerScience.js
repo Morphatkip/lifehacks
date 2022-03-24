@@ -8,7 +8,9 @@ function Computer() {
       <div style={{ margin: 10 }} className=" text-dark">
         <Accordion>
           <Accordion.Item eventKey="0">
-            <Accordion.Header>Biometric Authentication</Accordion.Header>
+            <Accordion.Header>
+              <h1 style={{ fontSize: 24 }}>Biometric Authentication</h1>
+            </Accordion.Header>
             <Accordion.Body>
               <p>
                 Biometrics is the examination of unique biological information
@@ -94,7 +96,10 @@ function Computer() {
           </Accordion.Item>
           <Accordion.Item eventKey="1">
             <Accordion.Header>
-              Impact of human behavior on Information technology
+              <h1 style={{ fontSize: 24 }}>
+                {" "}
+                Impact of human behavior on Information technology
+              </h1>
             </Accordion.Header>
             <Accordion.Body>
               <p>

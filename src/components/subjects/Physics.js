@@ -7,7 +7,9 @@ function Physics() {
         <Accordion>
           <Accordion.Item eventKey="0">
             <Accordion.Header>
-              Bohr Atomic model in understanding atomic structure
+              <h1 style={{ fontSize: 24 }}>
+                Bohr Atomic model in understanding atomic structure
+              </h1>
             </Accordion.Header>
             <Accordion.Body>
               <h1>Introduction </h1>

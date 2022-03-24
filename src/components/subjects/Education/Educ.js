@@ -8,7 +8,9 @@ function Educ() {
       </span>
       <Accordion>
         <Accordion.Item eventKey="0">
-          <Accordion.Header>The Special Education Process</Accordion.Header>
+          <Accordion.Header>
+            <h1 style={{ fontSize: 24 }}>The Special Education Process</h1>
+          </Accordion.Header>
           <Accordion.Body>
              
             <p>
@@ -171,7 +173,10 @@ function Educ() {
         </Accordion.Item>
         <Accordion.Item eventKey="1">
           <Accordion.Header>
-            Self-Reflection in Teaching and Learning
+            <h1 style={{ fontSize: 24 }}>
+              {" "}
+              Self-Reflection in Teaching and Learning
+            </h1>
           </Accordion.Header>
           <Accordion.Body>
             <p>
@@ -258,7 +263,10 @@ function Educ() {
         </Accordion.Item>
         <Accordion.Item eventKey="2">
           <Accordion.Header>
-            Teacher-Centered Versus Student-Centered Instructions
+            <h1 style={{ fontSize: 24 }}>
+              {" "}
+              Teacher-Centered Versus Student-Centered Instructions
+            </h1>
           </Accordion.Header>
           <Accordion.Body>
              
@@ -300,7 +308,10 @@ function Educ() {
         </Accordion.Item>
         <Accordion.Item eventKey="3">
           <Accordion.Header>
-            International Comparison of Educational Outcomes
+            <h1 style={{ fontSize: 24 }}>
+              {" "}
+              International Comparison of Educational Outcomes
+            </h1>
           </Accordion.Header>
           <Accordion.Body>
             <h2>Introduction</h2>

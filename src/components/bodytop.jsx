@@ -23,7 +23,20 @@ function bodyTop() {
               academic materials ranging from various disciplines. These
               academic materials are sample written by tutours.
             </p>
+            <hr />
+            <hr /> <hr />
+            <div
+              className="centre"
+              style={{
+                backgroundColor: "navy",
+                fontSize: 26,
+              }}
+            >
+              <p>In need of an essay or an academic related question.</p>
+              <p>Contact us at firetipsedu@gmail.com</p>
+            </div>
           </div>
+          <hr />
         </div>
       </div>
     </div>

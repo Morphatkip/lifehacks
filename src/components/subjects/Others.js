@@ -7,7 +7,10 @@ function Others() {
         <Accordion>
           <Accordion.Item eventKey="0">
             <Accordion.Header>
-              Gender affects color perception.
+              <h1 style={{ fontSize: 24 }}>
+                {" "}
+                Gender affects color perception.
+              </h1>
             </Accordion.Header>
             <Accordion.Body>
               <h1>Introduction </h1>
@@ -156,7 +159,10 @@ function Others() {
           </Accordion.Item>
           <Accordion.Item eventKey="1">
             <Accordion.Header>
-              Homelessness and COVID-19 Effects
+              <h1 style={{ fontSize: 24 }}>
+                {" "}
+                Homelessness and COVID-19 Effects
+              </h1>
             </Accordion.Header>
             <Accordion.Body>
               <p>
@@ -576,7 +582,9 @@ function Others() {
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="2">
-            <Accordion.Header>Persuasive influence techniques</Accordion.Header>
+            <Accordion.Header>
+              <h1 style={{ fontSize: 24 }}>Persuasive influence techniques</h1>
+            </Accordion.Header>
             <Accordion.Body>
               <p>
                 {" "}
@@ -694,7 +702,9 @@ function Others() {
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="3">
-            <Accordion.Header>Neighborhood Story</Accordion.Header>
+            <Accordion.Header>
+              <h1 style={{ fontSize: 24 }}>Neighborhood Story</h1>
+            </Accordion.Header>
             <Accordion.Body>
               <h1>Introduction </h1>
               <p>
@@ -784,7 +794,9 @@ function Others() {
           </Accordion.Item>
           <Accordion.Item eventKey="4">
             <Accordion.Header>
-              Can Horror Movies Increase Your Stress Levels?
+              <h1 style={{ fontSize: 24 }}>
+                Can Horror Movies Increase Your Stress Levels?
+              </h1>
             </Accordion.Header>
             <Accordion.Body>
               <p>
@@ -940,7 +952,9 @@ function Others() {
           </Accordion.Item>
           <Accordion.Item eventKey="5">
             <Accordion.Header>
-              Barriers to Effective Communication
+              <h1 style={{ fontSize: 24 }}>
+                Barriers to Effective Communication
+              </h1>
             </Accordion.Header>
             <Accordion.Body>
               <p>
@@ -992,7 +1006,9 @@ function Others() {
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="6">
-            <Accordion.Header>A Lesson Plan</Accordion.Header>
+            <Accordion.Header>
+              <h1 style={{ fontSize: 24 }}>A Lesson Plan</h1>
+            </Accordion.Header>
             <Accordion.Body>
               <p>
                 {" "}
@@ -1067,7 +1083,9 @@ function Others() {
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="7">
-            <Accordion.Header>Assessments</Accordion.Header>
+            <Accordion.Header>
+              <h1 style={{ fontSize: 24 }}>Assessments</h1>
+            </Accordion.Header>
             <Accordion.Body>
               <p>
                 {" "}
@@ -1120,7 +1138,9 @@ function Others() {
           </Accordion.Item>
           <Accordion.Item eventKey="8">
             <Accordion.Header>
-              How Social Media Supports Contemporary Personal Relationships
+              <h1 style={{ fontSize: 24 }}>
+                How Social Media Supports Contemporary Personal Relationships
+              </h1>
             </Accordion.Header>
             <Accordion.Body>
               <h2>Introduction</h2>

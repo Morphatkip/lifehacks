@@ -9,7 +9,10 @@ function HealthSciences() {
         <Accordion>
           <Accordion.Item eventKey="0">
             "{" "}
-            <Accordion.Header>Doctor-patient confidentiality</Accordion.Header>
+            <Accordion.Header>
+              {" "}
+              <h1 style={{ fontSize: 24 }}>Doctor-patient confidentiality</h1>
+            </Accordion.Header>
             <Accordion.Body>
               <p>
                 {" "}
@@ -89,7 +92,11 @@ function HealthSciences() {
           <Accordion.Item eventKey="1">
             "{" "}
             <Accordion.Header>
-              Ethical issues in medical records
+              {" "}
+              <h1 style={{ fontSize: 24 }}>
+                {" "}
+                Ethical issues in medical records
+              </h1>
             </Accordion.Header>
             <Accordion.Body>
               <p>
@@ -170,8 +177,12 @@ function HealthSciences() {
               <br />
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="1">
-            " <Accordion.Header>Effects of gamma radiation</Accordion.Header>
+          <Accordion.Item eventKey="2">
+            "{" "}
+            <Accordion.Header>
+              {" "}
+              <h1 style={{ fontSize: 24 }}>Effects of gamma radiation</h1>
+            </Accordion.Header>
             <Accordion.Body>
               <p>
                 The symbol that is used to denote Gamma radiation is the Greek
@@ -345,9 +356,10 @@ function HealthSciences() {
               <br />
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="2">
+          <Accordion.Item eventKey="3">
             <Accordion.Header>
-              Basics of Healthcare Informatics
+              {" "}
+              <h1 style={{ fontSize: 24 }}>Basics of Healthcare Informatics</h1>
             </Accordion.Header>
             <Accordion.Body>
               <p>

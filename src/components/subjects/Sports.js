@@ -6,7 +6,10 @@ function Sports() {
       <div style={{ margin: 10 }} className=" text-dark">
         <Accordion>
           <Accordion.Item eventKey="0">
-            <Accordion.Header>Exploitation in College sports</Accordion.Header>
+            <Accordion.Header>
+              {" "}
+              <h1 style={{ fontSize: 24 }}>Exploitation in College sports</h1>
+            </Accordion.Header>
             <Accordion.Body>
               <p>
                 {" "}

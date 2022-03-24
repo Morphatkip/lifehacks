@@ -10,7 +10,10 @@ function PoliticalScience() {
           <Accordion.Item eventKey="0">
             "{" "}
             <Accordion.Header>
-              The article 'What 'Snowflakes' Get Right About free speech'
+              <h1 style={{ fontSize: 24 }}>
+                {" "}
+                The article 'What 'Snowflakes' Get Right About free speech'
+              </h1>
             </Accordion.Header>
             <Accordion.Body>
               <p>
@@ -94,7 +97,10 @@ function PoliticalScience() {
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">
-            <Accordion.Header>The Electoral College</Accordion.Header>
+            <Accordion.Header>
+              {" "}
+              <h1 style={{ fontSize: 24 }}> The Electoral College</h1>{" "}
+            </Accordion.Header>
             <Accordion.Body>
               <p>
                 {" "}
@@ -208,7 +214,6 @@ function PoliticalScience() {
               search.ebscohost.com/login.aspx?direct=true&AuthType=shib&db=edsgac&AN=edsgac.A622557036&site=eds-live&scope=site
             </Accordion.Body>
           </Accordion.Item>
-          2
         </Accordion>
       </div>
       <div></div>

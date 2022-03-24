@@ -10,7 +10,9 @@ function Phsychology() {
           <Accordion.Item eventKey="0">
             "{" "}
             <Accordion.Header>
-              Media Influence on Social Thinking
+              <h1 style={{ fontSize: 24 }}>
+                Media Influence on Social Thinking
+              </h1>
             </Accordion.Header>
             <Accordion.Body>
               <p>
@@ -266,7 +268,10 @@ function Phsychology() {
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">
-            " <Accordion.Header>Literature Review</Accordion.Header>
+            "{" "}
+            <Accordion.Header>
+              <h1 style={{ fontSize: 24 }}>Literature Review</h1>
+            </Accordion.Header>
             <Accordion.Body>
               <p>
                 Psychological research employs a number of concepts and methods.
@@ -452,7 +457,9 @@ function Phsychology() {
           <Accordion.Item eventKey="2">
             "{" "}
             <Accordion.Header>
-              Relationship between Physical Illness and Stress
+              <h1 style={{ fontSize: 24 }}>
+                Relationship between Physical Illness and Stress
+              </h1>
             </Accordion.Header>
             <Accordion.Body>
               <p>
@@ -589,7 +596,10 @@ function Phsychology() {
           <Accordion.Item eventKey="3">
             "{" "}
             <Accordion.Header>
-              Black Psychologist: Robert Guthrie
+              <h1 style={{ fontSize: 24 }}>
+                {" "}
+                Black Psychologist: Robert Guthrie
+              </h1>
             </Accordion.Header>
             <Accordion.Body>
               <p>
@@ -782,7 +792,9 @@ function Phsychology() {
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="4">
-            <Accordion.Header>Behavior, Brain, and Cognition</Accordion.Header>
+            <Accordion.Header>
+              <h1 style={{ fontSize: 24 }}>Behavior, Brain, and Cognition</h1>
+            </Accordion.Header>
             <Accordion.Body>
               <p>
                 The study of behavior, brain, and cognition has become one of my

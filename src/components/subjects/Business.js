@@ -1,14 +1,16 @@
 import { Accordion } from "react-bootstrap";
 function Business() {
   return (
-    <div className="container  " pt-5>
+    <div className="container  ">
       <span className="text-center  display-6 fw-bold text-light">
         Business
       </span>
       <div style={{ margin: 10 }} className="text-dark">
         <Accordion>
           <Accordion.Item eventKey="0">
-            <Accordion.Header>Industrial Relations</Accordion.Header>
+            <Accordion.Header>
+              <h1 style={{ fontSize: 24 }}>Industrial Relations</h1>
+            </Accordion.Header>
             <Accordion.Body>
               <p>
                 An international labor organization has defined a trade union as
@@ -449,7 +451,9 @@ function Business() {
           </Accordion.Item>
           <Accordion.Item eventKey="1">
             <Accordion.Header>
-              The meaning of organizational change is slippery and contested
+              <h1 style={{ fontSize: 20 }}>
+                The meaning of organizational change is slippery and contested
+              </h1>
             </Accordion.Header>
             <Accordion.Body>
               <p>
@@ -882,10 +886,12 @@ function Business() {
               567-582. doi: 10.1287/orsc.13.5.567.7810.
             </Accordion.Body>
           </Accordion.Item>
-
           <Accordion.Item eventKey="2">
             <Accordion.Header>
-              5-year strategic marketing planning for Tesla motors
+              <h1 style={{ fontSize: 20 }}>
+                {" "}
+                5-year strategic marketing planning for Tesla motors
+              </h1>
             </Accordion.Header>
             <Accordion.Body>
               <h2>Abstract</h2>
@@ -1438,7 +1444,9 @@ function Business() {
           </Accordion.Item>
           <Accordion.Item eventKey="3">
             <Accordion.Header>
-              The Micro and Macro Forces and Actors of Apple Inc. Company
+              <h1 style={{ fontSize: 20 }}>
+                The Micro and Macro Forces and Actors of Apple Inc. Company
+              </h1>
             </Accordion.Header>
             <Accordion.Body>
               <h2>Introduction</h2>
@@ -1887,7 +1895,9 @@ function Business() {
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="4">
-            <Accordion.Header>Cadbury world case study</Accordion.Header>
+            <Accordion.Header>
+              <h1 style={{ fontSize: 20 }}> Cadbury world case study</h1>
+            </Accordion.Header>
             <Accordion.Body>
                <h2></h2>Outline
               <h2 />
@@ -2264,7 +2274,10 @@ function Business() {
 
           <Accordion.Item eventKey="5">
             <Accordion.Header>
-              Management Consultancy Report for Costa Coffee
+              <h1 style={{ fontSize: 20 }}>
+                {" "}
+                Management Consultancy Report for Costa Coffee
+              </h1>
             </Accordion.Header>
             <Accordion.Body>
               <h2>Introduction </h2>
@@ -2653,8 +2666,10 @@ function Business() {
           </Accordion.Item>
           <Accordion.Item eventKey="6">
             <Accordion.Header>
-              Social and Economic discrepancies in America today vs Medieval
-              Europe
+              <h1 style={{ fontSize: 20 }}>
+                Social and Economic discrepancies in America today vs Medieval
+                Europe
+              </h1>
             </Accordion.Header>
             <Accordion.Body>
                
@@ -2882,8 +2897,11 @@ function Business() {
 
           <Accordion.Item eventKey="7">
             <Accordion.Header>
-              In practice, “financial incentives are the best way to motivate
-              employees in workplace.”
+              <h1 style={{ fontSize: 20 }}>
+                {" "}
+                In practice, “financial incentives are the best way to motivate
+                employees in workplace.”
+              </h1>
             </Accordion.Header>
             <Accordion.Body>
               <p>
@@ -3074,7 +3092,9 @@ function Business() {
           </Accordion.Item>
           <Accordion.Item eventKey="8">
             <Accordion.Header>
-              Impacts of AI/technology on work in East Asia
+              <h1 style={{ fontSize: 20 }}>
+                Impacts of AI/technology on work in East Asia
+              </h1>
             </Accordion.Header>
             <Accordion.Body>
               <p>

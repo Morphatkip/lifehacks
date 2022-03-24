@@ -27,9 +27,10 @@ class Freelancing extends Component {
           >
             <div className="px-4 py-5 text-center text-light">
               <div className="col-lg-6 mx-auto lead mb-4">
+                <h1>Top 10 freelancing Sites</h1>
                 <p>
                   Companies are increasingly hiring freelancers to meet labor
-                  needs during the COVID-19 pandemic. As a result, the number of
+                  needs during the COVID-19 pandemic. As a result, the number
                   potential freelancing tasks – ranging from supermarket
                   shoppers to web engineers – is greater than ever.
                   <br />

@@ -7,7 +7,9 @@ function Literature() {
           Literature
         </span>
         <Accordion.Item eventKey="0">
-          <Accordion.Header>Summary of the novel Beloved</Accordion.Header>
+          <Accordion.Header>
+            <h1 style={{ fontSize: 24 }}>Summary of the novel Beloved</h1>
+          </Accordion.Header>
           <Accordion.Body>
             <p>
               The author of the novel Beloved is Toni Morrison. The novel which
@@ -88,7 +90,9 @@ function Literature() {
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="1">
-          <Accordion.Header>A REVIEW OF JORDAN PEELE’S US</Accordion.Header>
+          <Accordion.Header>
+            <h1 style={{ fontSize: 24 }}>A REVIEW OF JORDAN PEELE’S US</h1>
+          </Accordion.Header>
           <Accordion.Body>
             <p>
               {" "}
@@ -209,7 +213,9 @@ function Literature() {
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="2">
-          <Accordion.Header>Second Fictional Story</Accordion.Header>
+          <Accordion.Header>
+            <h1 style={{ fontSize: 24 }}>Second Fictional Story</h1>
+          </Accordion.Header>
           <Accordion.Body>
             <p>
               {" "}
@@ -384,7 +390,10 @@ function Literature() {
         </Accordion.Item>
         <Accordion.Item eventKey="3">
           <Accordion.Header>
-            Stereotyping in The Breakfast Club Film
+            <h1 style={{ fontSize: 24 }}>
+              {" "}
+              Stereotyping in The Breakfast Club Film
+            </h1>
           </Accordion.Header>
           <Accordion.Body>
             <p>
@@ -722,7 +731,10 @@ function Literature() {
         </Accordion.Item>
         <Accordion.Item eventKey="4">
           <Accordion.Header>
-            The article “Why should anyone be led by you?”
+            <h1 style={{ fontSize: 24 }}>
+              {" "}
+              The article “Why should anyone be led by you?”
+            </h1>
           </Accordion.Header>
           <Accordion.Body>
             <p>
@@ -833,7 +845,9 @@ function Literature() {
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="5">
-          <Accordion.Header>Blood relations by Sharon Pallock</Accordion.Header>
+          <Accordion.Header>
+            <h1 style={{ fontSize: 24 }}>Blood relations by Sharon Pallock</h1>
+          </Accordion.Header>
           <Accordion.Body>
             <p>
               {" "}
@@ -876,8 +890,10 @@ function Literature() {
             guide/symbols-allegory-motifs
           </Accordion.Body>
         </Accordion.Item>
-        <Accordion.Item eventKey="5">
-          <Accordion.Header>Hidden Intellectualism</Accordion.Header>
+        <Accordion.Item eventKey="6">
+          <Accordion.Header>
+            <h1 style={{ fontSize: 24 }}>Hidden Intellectualism</h1>
+          </Accordion.Header>
           <Accordion.Body>
             <p>
               {" "}
@@ -966,7 +982,9 @@ function Literature() {
         </Accordion.Item>
 
         <Accordion.Item eventKey="7">
-          <Accordion.Header>Life of Pi Movie Review</Accordion.Header>
+          <Accordion.Header>
+            <h1 style={{ fontSize: 24 }}>Life of Pi Movie Review</h1>
+          </Accordion.Header>
           <Accordion.Body>
              
             <p>
@@ -1079,7 +1097,9 @@ function Literature() {
         </Accordion.Item>
         <Accordion.Item eventKey="8">
           <Accordion.Header>
-            “Jahangir and his Father Akbar,” Folio from the Shah Jahan Album
+            <h1 style={{ fontSize: 24 }}>
+              “Jahangir and his Father Akbar,” Folio from the Shah Jahan Album
+            </h1>
           </Accordion.Header>
           <Accordion.Body>
             <p>

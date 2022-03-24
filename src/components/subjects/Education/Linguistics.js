@@ -9,7 +9,10 @@ function Linguistics() {
       <Accordion>
         <Accordion.Item eventKey="0">
           <Accordion.Header>
-            Second Language Teaching and Learning
+            <h1></h1>
+            <h1 style={{ fontSize: 24 }}>
+              Second Language Teaching and Learning
+            </h1>
           </Accordion.Header>
 
           <Accordion.Body>
@@ -562,7 +565,10 @@ function Linguistics() {
         </Accordion.Item>
         <Accordion.Item eventKey="1">
           <Accordion.Header>
-            TEACHING OF FL’s TO YOUNG LEARNERS
+            <h1 style={{ fontSize: 24 }}>
+              {" "}
+              TEACHING OF FL’s TO YOUNG LEARNERS
+            </h1>
           </Accordion.Header>
           <Accordion.Body>
             <p>
