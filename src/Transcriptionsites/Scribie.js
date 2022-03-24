@@ -18,9 +18,10 @@ function Scribie() {
             convenient. You can work whenever you choose, and you have the
             option of selecting which files to handle. If you don't like a file
             you've chosen, you can move on to the next and claim it.
-            <br />
-            <br />
-            <br />
+            <p>
+              <br></br> <a href=" https://scribie.com/jobs"> Scribie </a>
+              is here with the best transcription jobs for you, get started!
+            </p>
           </p>
         </div>
         <div className="col-md-6">

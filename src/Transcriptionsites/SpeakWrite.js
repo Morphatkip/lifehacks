@@ -21,10 +21,14 @@ function SpeakWrite() {
             minute. Finally, potential SpeakWrite transcriptionists should be
             fluent in English & possess excellent grammar skills. If you fulfill
             the requirement and pass the test, you'll be accepted.
-            <br />
-            <br />
-            <br />
-            <br />
+            <p>
+              <br></br> Apply for an online transcription job at
+              <a href="https://speakwrite.com/transcription-jobs">
+                {" "}
+                SpeakWrite{" "}
+              </a>
+              now!
+            </p>
           </p>
         </div>
         <div className="col-md-6">

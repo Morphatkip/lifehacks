@@ -20,10 +20,10 @@ function CastingWords() {
             States, this is really a good alternative. You can be working from
             practically anywhere in the globe and take the entrance exam as many
             times as you like.
-            <br />
-            <br />
-            <br />
-            <br />
+            <p>
+              <br></br> Start earning today by applying to get transcription
+              jobs at <a href=" https://castingwords.com/"> CastingWords.</a>
+            </p>
           </p>
         </div>
         <div className="col-md-6">
