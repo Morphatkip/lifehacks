@@ -21,12 +21,16 @@ function App() {
       <UserContextProvider>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/discipline" element={<Discipline />} />
+
           <Route path="/Freelancing" element={<Freelancing />} />
           <Route path="/Privacy" element={<Privacy />} />
-          <Route path="/Account" element={<Account />} />
+
+          {/**<Route path="/Signup" element={<Signup />} /> 
+           * <Route path="/Account" element={<Account />} />
           <Route path="/Login" element={<Login />} />
-          <Route path="/Signup" element={<Signup />} />
+          <Route path="/discipline" element={<Discipline />} />
+          */}
+
           <Route path="/Transcription" element={<Transcription />} />
         </Routes>
       </UserContextProvider>

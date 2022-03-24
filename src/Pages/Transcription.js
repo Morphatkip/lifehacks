@@ -10,6 +10,7 @@ import Speechpad from "../Transcriptionsites/Speechpad";
 import SpeakWrite from "../Transcriptionsites/SpeakWrite";
 import Form from "../components/Form";
 import Footer from "../components/footer";
+import transcription from "../images/Transcript/pc1.jpg";
 
 function Transcription() {
   return (
@@ -17,10 +18,21 @@ function Transcription() {
       <Navbar />
       <div style={{ backgroundColor: "black" }}>
         <div className="container pt-5" />
-        <div style={{}} className="container">
-          <div className="px-4 py-5 text-center text-light">
-            <div className="col-lg-6 mx-auto lead mb-4">
-              <p>
+        <div
+          style={{
+            backgroundImage: `url(${transcription})`,
+            backgroundSize: "cover",
+          }}
+          className="container"
+        >
+          <div className="px-4 py-5 text-center text-dark">
+            {" "}
+            <div
+              className="col-lg-6 mx-auto lead mb-4"
+              style={{ color: "white" }}
+            >
+              <h1> Best Transcription Sites</h1>
+              <p style={{ fontSize: 24 }} className="font-weight-normal">
                 <b> Looking for a Transcription job today?</b> Worry no more we
                 got you covered by providing you with the top Transcription
                 companies that provide transcription jobs for beginners as well

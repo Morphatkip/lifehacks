@@ -10,13 +10,8 @@ import Phsychology from "./subjects/Phsychology";
 import Physics from "./subjects/Physics";
 import PoliticalScience from "./subjects/PoliticalScience";
 import Sports from "./subjects/Sports.js";
-
+import Form from "./Form";
 class Body extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { value: "" };
-  }
-  handleSearch() {}
   render() {
     return (
       <div className="bg-dark ">
@@ -65,9 +60,10 @@ class Body extends Component {
         <PoliticalScience />
         <Sports />
         <Others />
-        <queries />
+        <Form />
         <div className="container pt-4"></div>
         <div className="container pt-4"></div>
+        <hr />
       </div>
     );
   }
