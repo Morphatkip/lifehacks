@@ -5,6 +5,7 @@ import Discipline from "./Pages/discpline";
 import Freelancing from "./Pages/Freelancing";
 import Privacy from "./Pages/Privacy";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Transcription from "./Pages/Transcription";
 
 import "react-toastify/dist/ReactToastify.css";
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/discipline" element={<Discipline />} />
         <Route path="/Freelancing" element={<Freelancing />} />
         <Route path="/Privacy" element={<Privacy />} />
+        <Route path="/Transcription" element={<Transcription />} />
       </Routes>
     </Router>
   );
