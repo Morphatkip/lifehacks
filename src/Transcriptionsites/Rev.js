@@ -1,12 +1,12 @@
 import rev from "../images/Transcript/Rev.PNG";
 function Rev() {
   return (
-    <div className="container bg-light pt-5">
+    <div className="container bg-light ">
       <div className="row g-5">
         <div className="col-md-6">
           <img src={rev} alt="..." className="img-thumbnail"></img>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6" style={{ fontSize: 19 }}>
           <h1>Rev</h1>
           <p>
             Rev, one of the largest and best transcription companies, always

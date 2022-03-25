@@ -3,7 +3,7 @@ function CastingWords() {
   return (
     <div className="container bg-light pt-5">
       <div className="row g-5">
-        <div className="col-md-6">
+        <div className="col-md-6" style={{ fontSize: 19 }}>
           <h1>CastingWords</h1>
           <p>
             Casting Words is one of the best transcription companies for people

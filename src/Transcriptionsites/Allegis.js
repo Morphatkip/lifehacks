@@ -6,7 +6,7 @@ function Allegis() {
         <div className="col-md-6">
           <img src={allegis} alt="..." className="img-thumbnail"></img>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6" style={{ fontSize: 19 }}>
           <h1>Allegis</h1>
           <p></p>
           <p></p>

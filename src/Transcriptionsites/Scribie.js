@@ -3,7 +3,7 @@ function Scribie() {
   return (
     <div className="container bg-light pt-5">
       <div className="row g-5">
-        <div className="col-md-6">
+        <div className="col-md-6" style={{ fontSize: 19 }}>
           <h1>Scribie</h1>
           <p>
             Scribie is a renowned transcription company that hire s both

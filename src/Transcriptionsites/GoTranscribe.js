@@ -6,8 +6,8 @@ function GoTranscribe() {
         <div className="col-md-6">
           <img src={gotranscribe} alt="..." className="img-thumbnail"></img>
         </div>
-        <div className="col-md-6">
-          <h1>GoTranscribe</h1>
+        <div className="col-md-6" style={{ fontSize: 19 }}>
+          <h1>GoTranscript</h1>
           <p>
             Candidates possessing excellent English skills are sought by Go
             Transcript — no prior experience is required. You have ten hours to
