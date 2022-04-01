@@ -6,6 +6,7 @@ import {
   signOut,
   updateProfile,
   sendPasswordResetEmail,
+  getAuth,
 } from "firebase/auth";
 import { auth } from "./firebase";
 import { useNavigate } from "react-router-dom";
@@ -20,7 +21,6 @@ export const UserContextProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-  const navigate = useNavigate();
 
   useState(() => {
     setLoading(true);
@@ -52,6 +52,11 @@ export const UserContextProvider = ({ children }) => {
       console.log(error);
     });
   };
+  let valid = false;
+
+  const isValid = () => {
+    return valid;
+  };
 
   const signInUser = (email, password) => {
     setLoading(true);
@@ -65,8 +70,16 @@ export const UserContextProvider = ({ children }) => {
         alert(errorMessage);
       }
       console.log(error);
-
-      navigate("/Home");
+      alert("sign in ");
+      onAuthStateChanged(getAuth(), (user) => {
+        if (user) {
+          //User is signed in,
+          valid = true;
+        } else {
+          valid = false;
+          // User is signed out
+        }
+      });
     });
   };
 
@@ -86,6 +99,7 @@ export const UserContextProvider = ({ children }) => {
     registerUser,
     logoutUser,
     forgotPassword,
+    isValid,
   };
   return (
     <UserContext.Provider value={contextValue}>{children}</UserContext.Provider>

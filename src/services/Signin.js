@@ -6,7 +6,7 @@ const Signin = () => {
   const emailRef = useRef();
   const psdRef = useRef();
   console.log({ context: useUserContext() });
-  const { signInUser, forgotPassword } = useUserContext();
+  const { signInUser, forgotPassword, isValid } = useUserContext();
   const navigate = useNavigate();
 
   const onSubmit = (e) => {
@@ -15,6 +15,8 @@ const Signin = () => {
     const password = psdRef.current.value;
     if (email && password) {
       signInUser(email, password);
+    }
+    if (isValid) {
       navigate("/Account");
     }
   };

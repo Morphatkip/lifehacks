@@ -5,16 +5,16 @@ import Discipline from "./Pages/discpline";
 import Freelancing from "./Pages/Freelancing";
 import Privacy from "./Pages/Privacy";
 import Account from "./Pages/Account";
-import Login from "./trial/Signin";
-import Signup from "./trial/Signup";
+import Login from "./services/Signin";
+import Signup from "./services/Signup";
 import Dashboard from "./components/Dashboard";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Transcription from "./Pages/Transcription";
 import "react-toastify/dist/ReactToastify.css";
-import { UserContextProvider, useUserContext } from "./trial/userContext";
-import Auth from "./trial/auth";
+import "./index.css";
+import { UserContextProvider, useUserContext } from "./services/userContext";
 function App() {
-  const { loading, error, user } = useUserContext;
+  const { isValid } = useUserContext;
 
   return (
     <Router>
@@ -24,12 +24,11 @@ function App() {
 
           <Route path="/Freelancing" element={<Freelancing />} />
           <Route path="/Privacy" element={<Privacy />} />
+          <Route path="/Account" element={<Account />} />
 
-          {/**<Route path="/Signup" element={<Signup />} /> 
-           * <Route path="/Account" element={<Account />} />
+          <Route path="/Signup" element={<Signup />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/discipline" element={<Discipline />} />
-          */}
 
           <Route path="/Transcription" element={<Transcription />} />
         </Routes>

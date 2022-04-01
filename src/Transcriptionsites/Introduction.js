@@ -8,6 +8,7 @@ function Introduction() {
         width: 900,
         fontSize: 19,
       }}
+      className="container"
     >
       <p>
         <b>

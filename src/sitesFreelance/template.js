@@ -1,4 +1,5 @@
-import fiver from "../images/Fiverr.PNG";
+{
+  /** import fiver from "../images/Fiverr.PNG";
 function Fiverr() {
   return (
     <div className="container bg-light pt-5">
@@ -16,3 +17,5 @@ function Fiverr() {
 }
 
 export default Fiverr;
+*/
+}
