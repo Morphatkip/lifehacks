@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import {
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
@@ -21,6 +21,17 @@ export const UserContextProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const history = useNavigate();
+  /**
+   *  useEffect(() => {
+    onAuthStateChanged((user) => {
+      setUser(user);
+      setLoading(false);
+      if (user) history.pushState("/Account");
+    });
+  }, [user, history]);
+
+   */
 
   useState(() => {
     setLoading(true);

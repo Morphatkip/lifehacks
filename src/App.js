@@ -11,7 +11,7 @@ import Dashboard from "./components/Dashboard";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Transcription from "./Pages/Transcription";
 import "react-toastify/dist/ReactToastify.css";
-import "./index.css";
+
 import { UserContextProvider, useUserContext } from "./services/userContext";
 function App() {
   const { isValid } = useUserContext;
