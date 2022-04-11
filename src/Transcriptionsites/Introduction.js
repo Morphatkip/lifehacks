@@ -4,8 +4,7 @@ function Introduction() {
       style={{
         color: "black",
         backgroundColor: "white",
-        margin: 30,
-        width: 900,
+
         fontSize: 19,
       }}
       className="container"

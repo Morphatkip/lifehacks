@@ -71,83 +71,101 @@ function Transcription() {
 
       <hr />
       <div className="container">
-        <div className="section section1 bg-light" style={{ width: 1000 }}>
-          <ul style={{ color: "blue", fontSize: 17 }}>
-            <br />
-            <li
-              className="link"
-              style={{ cursor: "pointer" }}
-              onClick={() => scrollDown(IntroductionSection)}
+        <div>
+          <div className="row justify-content-around">
+            <div
+              className="col-sm-9"
+              style={{ backgroundcolor: "white", margin: 2, color: " white" }}
             >
-              What is Transcription?
-            </li>
-            <li
-              className="link"
-              style={{ cursor: "pointer" }}
-              onClick={() => scrollDown(RevSection)}
-            >
-              Rev
-            </li>
-            <li
-              className="link"
-              style={{ cursor: "pointer" }}
-              onClick={() => scrollDown(ScribieSection)}
-            >
-              Scribie
-            </li>
-            <li
-              className="link"
-              style={{ cursor: "pointer" }}
-              onClick={() => scrollDown(GoTranscriptSection)}
-            >
-              GoTranscript
-            </li>
-            <li
-              className="link"
-              style={{ cursor: "pointer" }}
-              onClick={() => scrollDown(TranscribeMeSection)}
-            >
-              TranscribeMe
-            </li>
-            <li
-              className="nav-item"
-              style={{ cursor: "pointer" }}
-              onClick={() => scrollDown(AllegisSection)}
-            >
-              Allegis
-            </li>
-            <li
-              className="link"
-              style={{ cursor: "pointer" }}
-              onClick={() => scrollDown(CastingWordsSection)}
-            >
-              CastingWords
-            </li>
-            <li
-              className="link"
-              style={{ cursor: "pointer" }}
-              onClick={() => scrollDown(SpeechpadSection)}
-            >
-              Speechpad
-            </li>
-            <li
-              className="link"
-              style={{ cursor: "pointer" }}
-              onClick={() => scrollDown(SpeakWriteSection)}
-            >
-              SpeakWrite
-            </li>
-          </ul>
-          <div
-            className=" bg-transparent pt-5 section section2"
-            ref={IntroductionSection}
-          >
-            <Introduction />
+              {" "}
+              and i am here in white
+              <div className="section section1 bg-light">
+                <ul style={{ color: "blue", fontSize: 17 }}>
+                  <br />
+                  <li
+                    className="link"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => scrollDown(IntroductionSection)}
+                  >
+                    What is Transcription?
+                  </li>
+                  <li
+                    className="link"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => scrollDown(RevSection)}
+                  >
+                    Rev
+                  </li>
+                  <li
+                    className="link"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => scrollDown(ScribieSection)}
+                  >
+                    Scribie
+                  </li>
+                  <li
+                    className="link"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => scrollDown(GoTranscriptSection)}
+                  >
+                    GoTranscript
+                  </li>
+                  <li
+                    className="link"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => scrollDown(TranscribeMeSection)}
+                  >
+                    TranscribeMe
+                  </li>
+                  <li
+                    className="nav-item"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => scrollDown(AllegisSection)}
+                  >
+                    Allegis
+                  </li>
+                  <li
+                    className="link"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => scrollDown(CastingWordsSection)}
+                  >
+                    CastingWords
+                  </li>
+                  <li
+                    className="link"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => scrollDown(SpeechpadSection)}
+                  >
+                    Speechpad
+                  </li>
+                  <li
+                    className="link"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => scrollDown(SpeakWriteSection)}
+                  >
+                    SpeakWrite
+                  </li>
+                </ul>
+                <div
+                  className=" bg-transparent pt-5 section section2"
+                  ref={IntroductionSection}
+                >
+                  <Introduction />
+                </div>
+              </div>
+            </div>
+
+            <div
+              className=" col-sm-2"
+              style={{ backgroundColor: "yellow, margin:2 " }}
+            ></div>
+          </div>
+          <br />
+          <div className=" bg-transparent  section section2" ref={RevSection}>
+            <Rev />
           </div>
         </div>
-        <div className=" bg-transparent  section section2" ref={RevSection}>
-          <Rev />
-        </div>
+
         <div>
           <div
             className="bg-transparent pt-5 section section3"
