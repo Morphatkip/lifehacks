@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { db, auth } from "../utils/firebase";
 import firebase from "firebase/compat/app";
-import { Input, Button } from "@material-ui/core";
 
 function SendMessage({ scroll }) {
   const [msg, setMsg] = useState("");
@@ -36,7 +35,7 @@ function SendMessage({ scroll }) {
             value={msg}
             onChange={(e) => setMsg(e.target.value)}
           />
-          <Button
+          <button
             style={{
               width: "18%",
               fontSize: "15px",
@@ -47,7 +46,7 @@ function SendMessage({ scroll }) {
             type="submit"
           >
             Send
-          </Button>
+          </button>
         </div>
       </form>
     </div>

@@ -1,7 +1,6 @@
 import React from "react";
 import firebase from "firebase/compat/app";
 import { auth } from "../utils/firebase.js";
-import { Button } from "@material-ui/core";
 
 function SignIn() {
   function signInWithGoogle() {
@@ -17,7 +16,7 @@ function SignIn() {
         alignItems: "center",
       }}
     >
-      <Button
+      <button
         style={{
           padding: "30px",
           fontSize: "20px",
@@ -27,7 +26,7 @@ function SignIn() {
         onClick={signInWithGoogle}
       >
         Sign In With Google
-      </Button>
+      </button>
     </div>
   );
 }

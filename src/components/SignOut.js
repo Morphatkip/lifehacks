@@ -1,6 +1,5 @@
 import React from "react";
 import { auth } from "../utils/firebase.js";
-import { Button } from "@material-ui/core";
 
 function SignOut() {
   return (
@@ -16,7 +15,7 @@ function SignOut() {
         zIndex: "10",
       }}
     >
-      <Button
+      <button
         style={{
           padding: "20px",
           fontSize: "15px",
@@ -26,7 +25,7 @@ function SignOut() {
         onClick={() => auth.signOut()}
       >
         Sign Out
-      </Button>
+      </button>
     </div>
   );
 }
