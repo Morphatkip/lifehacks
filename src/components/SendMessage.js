@@ -1,53 +1,78 @@
 import React, { useState } from "react";
-import { db, auth } from "../utils/firebase";
 import firebase from "firebase/compat/app";
+import {
+  auth,
+  db,
+  storage,
+  ref,
+  uploadBytes,
+  getDownloadURL,
+} from "../services/firebase";
 
-function SendMessage({ scroll }) {
+function SendMessage({}) {
   const [msg, setMsg] = useState("");
+  const [file, setFile] = useState("");
+
+  const upload = () => {
+    // create a reference to the file
+    const fileRef = ref(storage, `${file.name}`);
+    // create a reference to 'users/file'
+    const fileFullRef = ref(storage, `users/${file.name}`);
+    //'file' come from the blob or file api
+    uploadBytes(fileFullRef, file).then((snapshot) => {
+      console.log("Uploaded a blob or file!");
+    });
+
+    db.collection("messages").add({
+      date: firebase.firestore.FieldValue.serverTimestamp(),
+      file: `users/${file.name}`,
+      text: file.name,
+      type: true,
+      id: auth.currentUser.uid,
+    });
+    setMsg("");
+  };
 
   async function sendMessage(e) {
     e.preventDefault();
-    const { uid, photoURL } = auth.currentUser;
 
     await db.collection("messages").add({
+      date: firebase.firestore.FieldValue.serverTimestamp(),
+      file: "null",
       text: msg,
-      photoURL,
-      uid,
-      createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+      type: true,
+      id: auth.currentUser.uid,
     });
     setMsg("");
-    scroll.current.scrollIntoView({ behavior: "smooth" });
   }
   return (
-    <div>
-      <form onSubmit={sendMessage}>
-        <div className="sendMsg">
-          <Input
-            style={{
-              width: "78%",
-              fontSize: "15px",
-              fontWeight: "550",
-              marginLeft: "5px",
-              marginBottom: "-3px",
+    <div className="container">
+      <form
+        onSubmit={(event) => {
+          sendMessage(event);
+        }}
+      >
+        <input
+          className=" span6 input-large search-query col-xs-4 "
+          type="text"
+          placeholder="message"
+          onChange={(e) => {
+            setMsg(e.target.value);
+          }}
+        />
+        <button type="submit" className="btn">
+          Send
+        </button>
+        <form>
+          <input
+            type="file"
+            onChange={(e) => {
+              setFile(e.target.files[0]);
             }}
-            placeholder="Message..."
-            type="text"
-            value={msg}
-            onChange={(e) => setMsg(e.target.value)}
           />
-          <button
-            style={{
-              width: "18%",
-              fontSize: "15px",
-              fontWeight: "550",
-              margin: "4px 5% -13px 5%",
-              maxWidth: "200px",
-            }}
-            type="submit"
-          >
-            Send
-          </button>
-        </div>
+        </form>
+
+        <button onClick={upload}>Upload</button>
       </form>
     </div>
   );

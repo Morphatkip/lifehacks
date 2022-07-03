@@ -1,6 +1,23 @@
 import React, { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { useUserContext } from "./userContext";
+import {
+  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut,
+  updateProfile,
+  sendPasswordResetEmail,
+  getAuth,
+} from "firebase/auth";
+import {
+  getFirestore,
+  query,
+  getDocs,
+  collections,
+  where,
+  addDoc,
+} from "firebase/firestore";
 
 const Signin = () => {
   const emailRef = useRef();

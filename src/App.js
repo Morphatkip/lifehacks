@@ -1,38 +1,31 @@
 import "bootstrap/dist/css/bootstrap.css";
-import { useState } from "react";
 import Home from "./Pages/home";
-import Discipline from "./Pages/discpline";
 import Freelancing from "./Pages/Freelancing";
 import Privacy from "./Pages/Privacy";
-import Account from "./Pages/Account";
-import Login from "./services/Signin";
-import Signup from "./services/Signup";
-import Dashboard from "./components/Dashboard";
+import Login from "./User/Login";
+import Register from "./User/Register";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Transcription from "./Pages/Transcription";
-import "react-toastify/dist/ReactToastify.css";
-
-import { UserContextProvider, useUserContext } from "./services/userContext";
+import Admin from "./Pages/admin.js";
+import Dashboard from "./Pages/Dashboard";
+import Order from "./User/Order";
+import NewOrder from "./User/NewOrder";
 function App() {
-  const { isValid } = useUserContext;
-
   return (
     <Router>
-      <UserContextProvider>
-        <Routes>
-          <Route path="/" element={<Home />} />
-
-          <Route path="/Freelancing" element={<Freelancing />} />
-          <Route path="/Privacy" element={<Privacy />} />
-          <Route path="/Account" element={<Account />} />
-
-          <Route path="/Signup" element={<Signup />} />
-          <Route path="/Login" element={<Login />} />
-          <Route path="/discipline" element={<Discipline />} />
-
-          <Route path="/Transcription" element={<Transcription />} />
-        </Routes>
-      </UserContextProvider>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Freelancing" element={<Freelancing />} />
+        <Route path="/Privacy" element={<Privacy />} />
+        <Route path="/Dashboard" element={<Dashboard />} />
+        <Route path="/Register" element={<Register />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Transcription" element={<Transcription />} />
+        <Route path="/Admin" element={<Admin />} />
+        <Route path="/Order" element={<Order />} />
+        <Route path="/NewOrder" element={<NewOrder />} />
+        <Route />
+      </Routes>
     </Router>
   );
 }
