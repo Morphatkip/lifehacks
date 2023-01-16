@@ -27,7 +27,7 @@ function SendMessage({}) {
       date: firebase.firestore.FieldValue.serverTimestamp(),
       file: `users/${file.name}`,
       text: file.name,
-      type: true,
+      type: this.props.type,
       id: auth.currentUser.uid,
     });
     setMsg("");

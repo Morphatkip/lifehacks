@@ -13,6 +13,9 @@ function Chat() {
 
   // Start the fetch operation as soon as
   // the page loads
+  useEffect(() => {
+    Fetchdata();
+  });
   window.addEventListener("load", () => {
     Fetchdata();
   });
@@ -21,12 +24,14 @@ function Chat() {
   const Fetchdata = () => {
     db.collection("messages")
       .orderBy("date", "asc")
+      .limit(50)
       .get()
       .then((querySnapshot) => {
         // Loop through the data and store
         // it in array to display
         querySnapshot.forEach((element) => {
           var messages = element.data();
+          console.log("this is the data");
           setInfo((arr) => [...arr, messages]);
         });
       });
@@ -36,24 +41,23 @@ function Chat() {
   return (
     <div>
       <div
-        className="container border border-dark rounded"
-        style={{ height: 300, width: 460 }}
+        className="container border border-dark rounded overflow"
+        style={{ height: 300, width: 460, overflow: "auto" }}
       >
         {info
           .filter((userss) => userss.id == auth.currentUser.uid)
           .map((messages) => (
             <Frame
-              key="{messages.text}"
+              key={messages.text}
               Dates={messages.date}
               File={messages.file}
               Text={messages.text}
               Type={messages.type}
             />
           ))}
+        <SendMessage type={this.props.type} />
       </div>
-
-      <SendMessage />
-    </div>
+    </div> 
   );
 }
 
@@ -85,13 +89,13 @@ const Frame = ({ Dates, File, Text, Type }) => {
       <div className="div">
         {Type ? (
           <div className="float-left">
-            <div style={{ fontSize: 24 }} onClick={download}>
+            <div style={{ fontSize: 18 }} onClick={download}>
               <a href={File}>{Text} </a>
             </div>
           </div>
         ) : (
           <div className="float-right">
-            <div style={{ fontSize: 24 }} onClick={download}>
+            <div style={{ fontSize: 18 }} onClick={download}>
               {Text}
             </div>
           </div>
@@ -103,11 +107,11 @@ const Frame = ({ Dates, File, Text, Type }) => {
       <div className="div">
         {Type ? (
           <div className="float-left">
-            <div style={{ fontSize: 24 }}>{Text}</div>
+            <div style={{ fontSize: 18 }}>{Text}</div>
           </div>
         ) : (
           <div className="float-right">
-            <div style={{ fontSize: 24 }}>{Text}</div>
+            <div style={{ fontSize: 18 }}>{Text}</div>
           </div>
         )}
       </div>

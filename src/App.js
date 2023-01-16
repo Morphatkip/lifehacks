@@ -6,10 +6,12 @@ import Login from "./User/Login";
 import Register from "./User/Register";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Transcription from "./Pages/Transcription";
-import Admin from "./Pages/admin.js";
+import Admin from "./Pages/Admin.js";
 import Dashboard from "./Pages/Dashboard";
 import Order from "./User/Order";
 import NewOrder from "./User/NewOrder";
+import SipeedMaix from "./Pages/SipeedMaix";
+import Programming from "./Pages/Programming";
 function App() {
   return (
     <Router>
@@ -24,6 +26,7 @@ function App() {
         <Route path="/Admin" element={<Admin />} />
         <Route path="/Order" element={<Order />} />
         <Route path="/NewOrder" element={<NewOrder />} />
+        <Route path="/programming" element={<Programming />} />
         <Route />
       </Routes>
     </Router>

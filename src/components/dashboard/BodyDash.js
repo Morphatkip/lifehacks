@@ -5,7 +5,8 @@ import NewOrder from "../../User/NewOrder";
 import Profile from "../../User/Profile";
 //import "react-tabs/style/react-tabs.css";
 
-function BodyDash() {
+function BodyDash(props) {
+  const type = props.type;
   return (
     <Tabs className="row">
       <TabList className="col-sm-4 list-group">
@@ -24,7 +25,7 @@ function BodyDash() {
 
         <TabPanel>
           <div className="container">
-            <Chat />
+            <Chat type={type} />
           </div>
         </TabPanel>
         <TabPanel>

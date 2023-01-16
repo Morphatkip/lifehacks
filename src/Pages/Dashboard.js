@@ -14,6 +14,7 @@ const Dashboard = () => {
     try {
       const q = query(collection(db, "users"), where("uid", "==", user?.uid));
       const doc = await getDocs(q);
+
       const data = doc.docs[0].data();
       setName(data.name);
     } catch (err) {
@@ -30,7 +31,7 @@ const Dashboard = () => {
   return (
     <div>
       <DashNavBar value={name} />
-      <BodyDash />
+      <BodyDash type="true" />
       <Footer />
     </div>
   );

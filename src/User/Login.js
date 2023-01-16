@@ -14,12 +14,18 @@ function SignIn() {
   const [password, setPassword] = useState("");
   const [user, loading, error] = useAuthState(auth);
   const navigate = useNavigate();
+  const admin = "5CwVq34SteedGDqSZR8jvskITKg2";
+
   useEffect(() => {
     if (loading) {
       //maybe trigger a loading screen
       return;
     }
-    if (user) navigate("/Dashboard");
+    if (user && auth.currentUser.uid != admin) {
+      navigate("/Dashboard");
+    } else {
+      navigate("/Admin");
+    }
   }, [user, loading]);
 
   return (
