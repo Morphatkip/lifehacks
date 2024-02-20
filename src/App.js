@@ -6,7 +6,6 @@ import Login from "./User/Login";
 import Register from "./User/Register";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Transcription from "./Pages/Transcription";
-import Admin from "./Pages/Admin.js";
 import Dashboard from "./Pages/Dashboard";
 import Order from "./User/Order";
 import NewOrder from "./User/NewOrder";
@@ -26,7 +25,6 @@ function App() {
         <Route path="/Register" element={<Register />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Transcription" element={<Transcription />} />
-        <Route path="/Admin" element={<Admin />} />
         <Route path="/Order" element={<Order />} />
         <Route path="/NewOrder" element={<NewOrder />} />
         <Route path="/programming" element={<Programming />} />
