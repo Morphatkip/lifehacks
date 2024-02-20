@@ -12,11 +12,14 @@ import Order from "./User/Order";
 import NewOrder from "./User/NewOrder";
 import SipeedMaix from "./Pages/SipeedMaix";
 import Programming from "./Pages/Programming";
+import Remo from "./Pages/Remo.jsx";
+import ScreeningAnswers from "./Pages/ScreeningAnswers.jsx";
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        {/*  <Route path="/" element={<Home />} /> */}
+        <Route path="/" element={<Remo />} />
         <Route path="/Freelancing" element={<Freelancing />} />
         <Route path="/Privacy" element={<Privacy />} />
         <Route path="/Dashboard" element={<Dashboard />} />
@@ -27,6 +30,7 @@ function App() {
         <Route path="/Order" element={<Order />} />
         <Route path="/NewOrder" element={<NewOrder />} />
         <Route path="/programming" element={<Programming />} />
+        <Route path="/screening-answers" element={<ScreeningAnswers />} />
         <Route />
       </Routes>
     </Router>

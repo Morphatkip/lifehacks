@@ -1,6 +1,6 @@
 import emailjs from "emailjs-com";
 import { toast } from "react-toastify";
-toast.configure();
+
 const Form = () => {
   function sendEmail(e) {
     e.preventDefault();

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+/* import React, { useEffect, useState } from "react";
 import { BodyDash, DashNavBar, Footer } from "../components/dashboard/index";
 import BodyAdmin from "../components/Admin/BodyAdmin";
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -39,3 +39,4 @@ const Admin = () => {
 };
 
 export default Admin;
+ */

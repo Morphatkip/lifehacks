@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+/* import React, { useState, useEffect, useRef } from "react";
 import { db, auth } from "../utils/firebase";
 import SendMessage from "./SendMessage";
 import SignOut from "./SignOut";
@@ -120,3 +120,4 @@ const Frame = ({ Dates, File, Text, Type }) => {
 };
 
 export default Chat;
+ */

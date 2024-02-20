@@ -44,9 +44,9 @@ export {
   getDoc,
   collection,
   getDocs,
-  getStorage,
   ref,
   getDownloadURL,
   uploadBytesResumable,
   setDoc,
+  getStorage,
 };

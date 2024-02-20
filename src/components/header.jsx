@@ -21,11 +21,11 @@ class Header extends Component {
     return (
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <head>
-          <script
+          {/*  <script
             async
             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8414147059446909"
             crossorigin="anonymous"
-          ></script>
+          ></script> */}
           <title>Academic aid</title>
         </head>
         <div className="container-fluid">

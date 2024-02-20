@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+/* import React, { useEffect, useState } from "react";
 import { BodyDash, DashNavBar, Footer } from "../components/dashboard/index";
-import { useAuthState } from "react-firebase-hooks/auth";
+/* import { useAuthState } from "react-firebase-hooks/auth"; 
 import { useNavigate } from "react-router-dom";
-import { auth, db, logout } from "../services/firebase";
-import { query, collection, getDocs, where } from "firebase/firestore";
+/* import { auth, db, logout } from "../services/firebase"; */
+/* import { query, collection, getDocs, where } from "firebase/firestore"; 
 
 const Dashboard = () => {
   const [user, loading, error] = useAuthState(auth);
@@ -38,3 +38,4 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+ */

@@ -13,15 +13,19 @@
   --secondaryColor: #db2b39;
   --textColor: #eee;
 }
+.nav-container {
+  width: 100%;
+  background-image: url("../images/programming/wood.jpg");
+  height: 80px;
+}
 
 header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   height: 80px;
-  padding: 0 2rem;
-  background-image: url("../images/programming/wood.jpg");
   color: var(--textColor);
+
+  float: right;
 }
 
 nav a {

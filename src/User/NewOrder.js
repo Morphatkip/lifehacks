@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+/* import React, { useState } from "react";
 import {
   ref,
   uploadBytes,
@@ -52,7 +52,7 @@ function NewOrder() {
           sendMessage(event);
         }}
       >
-        {/** Major*/}
+        {/** Major}
         <div className="input-group mb-3">
           <div className="input-group-prepend">
             <span className="input-group-text" id="inputGroup-sizing-default">
@@ -70,7 +70,7 @@ function NewOrder() {
             }}
           />
         </div>
-        {/** Format*/}
+        {/** Format}
         <div className="input-group mb-3">
           <div className="input-group-prepend">
             <span className="input-group-text" id="inputGroup-sizing-default">
@@ -89,7 +89,7 @@ function NewOrder() {
           />
         </div>
 
-        {/** pages*/}
+        {/** pages}
         <div className="input-group mb-3">
           <div className="input-group-prepend">
             <span className="input-group-text" id="inputGroup-sizing-default">
@@ -108,7 +108,7 @@ function NewOrder() {
           />
         </div>
 
-        {/** description*/}
+        {/** description}
         <div className="input-group">
           <div className="input-group-prepend">
             <span className="input-group-text">Description</span>
@@ -122,7 +122,7 @@ function NewOrder() {
           ></textarea>
         </div>
 
-        {/** choose a file*/}
+        {/** choose a file}
         <br></br>
         <div className="input-group mb-3">
           <div className="custom-file">
@@ -143,7 +143,7 @@ function NewOrder() {
           </div>
         </div>
 
-        {/** time*/}
+        {/** time}
         <div className="input-group mb-3">
           <div className="input-group-prepend">
             <label className="input-group-text" for="inputGroupSelect01">
@@ -193,3 +193,4 @@ function NewOrder() {
 }
 
 export default NewOrder;
+ */
