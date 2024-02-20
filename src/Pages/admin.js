@@ -1,13 +1,13 @@
-/* import React, { useEffect, useState } from "react";
-import { BodyDash, DashNavBar, Footer } from "../components/dashboard/index";
+import React from "react";
+/* import { BodyDash, DashNavBar, Footer } from "../components/dashboard/index"; */
 import BodyAdmin from "../components/Admin/BodyAdmin";
-import { useAuthState } from "react-firebase-hooks/auth";
+/* import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
 import { auth, db, logout } from "../services/firebase";
 import { query, collection, getDocs, where } from "firebase/firestore";
-
+ */
 const Admin = () => {
-  const [user, loading, error] = useAuthState(auth);
+  /* const [user, loading, error] = useAuthState(auth);
   const [name, setName] = useState("");
   const navigate = useNavigate();
 
@@ -28,10 +28,10 @@ const Admin = () => {
     if (!user) return navigate("/");
     fetchUserName();
   }, [user, loading]);
-
+ */
   return (
     <div>
-      <DashNavBar value={name} />
+      <DashNavBar />
       <BodyAdmin />
       <Footer />
     </div>
@@ -39,4 +39,3 @@ const Admin = () => {
 };
 
 export default Admin;
- */
