@@ -12,6 +12,8 @@ import SimplyHired from "../sitesFreelance/SimplyHired";
 import Guru from "../sitesFreelance/Guru";
 import Behance from "../sitesFreelance/Behance";
 import Designs from "../sitesFreelance/99designs";
+import "../styles/styles.css";
+
 function Freelancing() {
   const ToptalSection = useRef(null);
   const UpworkSection = useRef(null);
@@ -36,7 +38,7 @@ function Freelancing() {
     <div>
       <Navbar />
 
-      <div style={{ backgroundColor: "black" }}>
+      <div>
         <div className="container pt-5" />
         <div
           style={{
@@ -243,10 +245,7 @@ function Freelancing() {
             <h1 className="bg-light" ref={FreelancingSites}>
               Freelancing Sites
             </h1>
-            <div
-              className=" bg-transparent section section2"
-              ref={ToptalSection}
-            >
+            <div className=" section section2" ref={ToptalSection}>
               <Toptal />
             </div>
 
@@ -321,7 +320,7 @@ function Freelancing() {
           </div>
 
           <div className="container bg-transparent pt-5">
-            <div className="container text-light pt-5 px-4 py-5 text-center text-light">
+            <div className="container text-dark pt-5 px-4 py-5 text-center ">
               <h1>Conclusion</h1>
               <p>
                 That concludes the list of the best freelancing websites in 2022

@@ -2,7 +2,9 @@ import React from "react";
 import Footer from "../components/footer";
 import Navbar from "../components/Navbar";
 import books from "../images/books.PNG";
+import payment from "../images/payment.png";
 import { Link } from "react-router-dom";
+import "../styles/styles.css";
 function Remo() {
   const containerStyle = {
     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${books})`,
@@ -27,65 +29,12 @@ function Remo() {
                   the comfort of our homes.
                 </p>
 
-                {/*     <h2 className="fw-bold">
-                  Unleashing the Power of Remote Work with Remotasks
-                </h2>
                 <p>
-                  <strong>Discover Work-Life Harmony:</strong> Remotasks isn't
-                  just a platform; it's a gateway to achieving work-life
-                  balance. Explore how this platform empowers individuals to
-                  craft their schedules, allowing them to embrace the
-                  flexibility they've always desired.
+                  Remotask is a platform where you can do small tasks and get
+                  paid. It pays as promised. Currently, I'm earning $11-$16 on
+                  my coding account. I have some helpful notes about my
+                  experience that you won't find on their website.
                 </p>
-
-                <p>
-                  <strong>Task Diversity for Every Skill Set:</strong> Dive into
-                  a world of diverse tasks tailored to individual skills and
-                  interests. Whether you're a data enthusiast, content
-                  moderator, or image annotation pro, Remotasks has
-                  opportunities suited just for you.
-                </p>
-
-                <p>
-                  <strong>Seamless Earning, Anywhere:</strong> Learn how
-                  Remotasks simplifies the process of earning money from the
-                  comfort of your home. Discover the convenience of completing
-                  tasks on your own terms and witnessing your income grow
-                  effortlessly.
-                </p>
-
-                <p>
-                  <strong>Navigating with Ease:</strong> Explore the
-                  user-friendly interface of Remotasks, ensuring that users,
-                  regardless of their experience levels, can engage seamlessly
-                  with the platform. Uncover the simplicity that makes remote
-                  work accessible to all.
-                </p>
-
-                <p>
-                  <strong>Unlock Skills with Free Bootcamp Training:</strong> If
-                  you're new to the world of remote work, Remotasks has you
-                  covered. Delve into the details of the free bootcamp training,
-                  designed to equip you with the skills needed to excel in your
-                  chosen tasks.
-                </p>
-
-                <p>
-                  <strong>Building a Remote Work Community:</strong> Learn how
-                  Remotasks fosters a vibrant community of remote workers.
-                  Discover the benefits of sharing experiences, seeking advice,
-                  and connecting with others on the same journey to financial
-                  independence.
-                </p>
-
-                <p>
-                  Join us on FireTipsEdu as we explore the transformative
-                  possibilities of Remotasks. This isn't just an article; it's a
-                  guide to redefining your work-life balance and stepping into a
-                  future of remote work that suits your lifestyle. Embrace the
-                  journey towards financial empowerment with Remotasks on
-                  FireTipsEdu!
-                </p> */}
                 <hr />
               </div>
               <hr />
@@ -120,25 +69,31 @@ function Remo() {
             </div>
 
             <p className="fs-5 col-md-8 m-30 text-md-centre">
-              We have compiled a detailed sample question and answers of Coder
-              screening questions. View them{" "}
+              I've put together a set of questions and answers related to coding
+              screening, which is my expertise. You can check them out
               <Link to="/screening-answers"> here</Link>.
             </p>
           </div>
         </div>
         <hr />
-        {/*  <Business />
-        <Computer />
-        <Criminology />
-        <Education />
-        <HealthSciences />
-        <Phsychology />
-        <Physics />
-        <PoliticalScience />
-        <Sports />
-        <Others />
-        <Form /> */}
-        <div className="container pt-4"></div>
+
+        <div className="container pt-4 ">
+          <h1 className="display-5 fw-bold">Remotasks Payments</h1>
+          <div className="m-3">
+            <img alt="Payment" src={payment} className="payment-img" />
+          </div>
+          <div className="m-3">
+            <p className="p-3">
+              Remotasks facilitates payments through reliable platforms such as
+              PayPal or AirTM, contingent upon the quality and quantity of tasks
+              you successfully complete. Payments are disbursed on a weekly
+              basis, specifically every Wednesday, as illustrated in the image
+              above. During my tenure with Remotasks, I opted for PayPal as my
+              preferred method of receiving payments, finding it to be a secure
+              and efficient choice for my financial transactions.
+            </p>
+          </div>
+        </div>
         <div className="container pt-4"></div>
         <hr />
       </div>

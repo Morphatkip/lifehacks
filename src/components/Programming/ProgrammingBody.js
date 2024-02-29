@@ -7,7 +7,7 @@ import UseModal from "../Modal/UseModal";
 function ProgrammingBody() {
   const { isShowing, toggle } = UseModal();
   return (
-    <div className="background-image">
+    <div className="background-image programming">
       <div className="image-container">
         <div className="text">
           <h1>Programming Corner</h1>

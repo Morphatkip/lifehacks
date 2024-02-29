@@ -9,7 +9,6 @@ import Transcription from "./Pages/Transcription";
 import Dashboard from "./Pages/Dashboard";
 import Order from "./User/Order";
 import NewOrder from "./User/NewOrder";
-import SipeedMaix from "./Pages/SipeedMaix";
 import Programming from "./Pages/Programming";
 import Remo from "./Pages/Remo.jsx";
 import ScreeningAnswers from "./Pages/ScreeningAnswers.jsx";

@@ -96,3 +96,12 @@ nav {
     font-size: 1.5rem;
   }
 }
+.brand {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 30px;
+}
+.brand a {
+  text-decoration: none;
+  font-weight: 700;
+}

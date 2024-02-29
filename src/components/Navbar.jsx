@@ -15,27 +15,29 @@ function Navbar() {
   };
   return (
     <div className="nav-container">
-      <header>
-        <h3></h3>
-        <nav ref={navRef}>
-          <Link to="/" className="home">
-            Home
-          </Link>
+      <div className="d-flex justify-content-between">
+        <div className="brand">
+          <Link to="/">Firetipsedu</Link>
+        </div>
 
-          <Link to="/Freelancing">Frelancing sites</Link>
+        <header>
+          <nav ref={navRef}>
+            <Link to="/">Home</Link>
+            <Link to="/Freelancing">Frelancing sites</Link>
 
-          <Link to="/Transcription">Transcription</Link>
+            <Link to="/Transcription">Transcription</Link>
 
-          <Link to="/programming">Programming</Link>
-          <button onClick={showNavBar} className="nav-btn nav-close-btn">
-            Close
+            <Link to="/programming">Programming</Link>
+            <button onClick={showNavBar} className="nav-btn nav-close-btn">
+              Close
+            </button>
+          </nav>
+
+          <button onClick={showNavBar} className="nav-btn">
+            Menu
           </button>
-        </nav>
-
-        <button onClick={showNavBar} className="nav-btn">
-          Menu
-        </button>
-      </header>
+        </header>
+      </div>
     </div>
   );
 }

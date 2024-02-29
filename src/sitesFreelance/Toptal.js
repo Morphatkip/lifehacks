@@ -1,10 +1,11 @@
 import toptal from "../images/toptal.PNG";
+import "../styles/styles.css";
 function Toptal() {
   return (
     <div className="container bg-light pt-5">
       <div className="row g-5 ">
-        <div className="col-md-6 ">
-          <img src={toptal} alt="toptal" className="img-thumbnail"></img>
+        <div className="col-md-6 img-container">
+          <img src={toptal} alt="toptal" className="sites-img"></img>
         </div>
         <div className="col-md-6 ">
           <h1>Toptal</h1>
