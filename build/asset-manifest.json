@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a2466e96.css",
-    "main.js": "/static/js/main.ab7d4fd1.js",
+    "main.css": "/static/css/main.5f0d8210.css",
+    "main.js": "/static/js/main.520eeaf1.js",
     "static/js/787.8675c87a.chunk.js": "/static/js/787.8675c87a.chunk.js",
     "static/media/CastingWords.PNG": "/static/media/CastingWords.d8cf02d9b47b63504b04.PNG",
     "static/media/wood.jpg": "/static/media/wood.43b79f3b89a86318e29b.jpg",
@@ -23,17 +23,18 @@
     "static/media/GoTranscribe.PNG": "/static/media/GoTranscribe.866ffe8e781fbf6e1485.PNG",
     "static/media/SimplyHired.PNG": "/static/media/SimplyHired.a4bbd4aa55d4f0fdb597.PNG",
     "static/media/99designs.PNG": "/static/media/99designs.074ce67f7364cce80e20.PNG",
+    "static/media/payment.png": "/static/media/payment.57f334b4643383a65306.png",
     "static/media/Rev.PNG": "/static/media/Rev.b06d6f3273db0a95682e.PNG",
     "static/media/Scribie.PNG": "/static/media/Scribie.526743e28fcc8e617fb0.PNG",
     "static/media/SpeakWrite.PNG": "/static/media/SpeakWrite.283820cdd41749689e8d.PNG",
     "index.html": "/index.html",
     "static/media/Linkedin.PNG": "/static/media/Linkedin.31d6cfe0d16ae931b73c.PNG",
-    "main.a2466e96.css.map": "/static/css/main.a2466e96.css.map",
-    "main.ab7d4fd1.js.map": "/static/js/main.ab7d4fd1.js.map",
+    "main.5f0d8210.css.map": "/static/css/main.5f0d8210.css.map",
+    "main.520eeaf1.js.map": "/static/js/main.520eeaf1.js.map",
     "787.8675c87a.chunk.js.map": "/static/js/787.8675c87a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2466e96.css",
-    "static/js/main.ab7d4fd1.js"
+    "static/css/main.5f0d8210.css",
+    "static/js/main.520eeaf1.js"
   ]
 }
