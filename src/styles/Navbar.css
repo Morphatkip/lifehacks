@@ -15,8 +15,9 @@
 }
 .nav-container {
   width: 100%;
-  background-image: url("../images/programming/wood.jpg");
+  /* background-image: url("../images/programming/wood.jpg"); */
   height: 80px;
+  margin-bottom: 200px;
 }
 
 header {
@@ -104,4 +105,10 @@ nav {
 .brand a {
   text-decoration: none;
   font-weight: 700;
+}
+
+.nav-list nav {
+  margin-top: 20px;
+  margin-bottom: auto;
+  margin-left: 30px;
 }

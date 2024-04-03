@@ -14,8 +14,8 @@ function Remo() {
   };
   return (
     <div>
-      <Navbar />
       <div className=" ">
+        <Navbar />
         <div className="pt-5">
           <div className="container">
             <div className="px-4 py-5  text-dark ">

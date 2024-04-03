@@ -12,12 +12,13 @@ import NewOrder from "./User/NewOrder";
 import Programming from "./Pages/Programming";
 import Remo from "./Pages/Remo.jsx";
 import ScreeningAnswers from "./Pages/ScreeningAnswers.jsx";
+import Categories from "./Pages/Categories.jsx";
 function App() {
   return (
     <Router>
       <Routes>
-        {/*  <Route path="/" element={<Home />} /> */}
-        <Route path="/" element={<Remo />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/remotask" element={<Remo />} />
         <Route path="/Freelancing" element={<Freelancing />} />
         <Route path="/Privacy" element={<Privacy />} />
         <Route path="/Dashboard" element={<Dashboard />} />
@@ -28,7 +29,7 @@ function App() {
         <Route path="/NewOrder" element={<NewOrder />} />
         <Route path="/programming" element={<Programming />} />
         <Route path="/screening-answers" element={<ScreeningAnswers />} />
-        <Route />
+        <Route path="/categories" element={<Categories />} />
       </Routes>
     </Router>
   );

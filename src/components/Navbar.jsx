@@ -20,14 +20,16 @@ function Navbar() {
           <Link to="/">Firetipsedu</Link>
         </div>
 
-        <header>
-          <nav ref={navRef}>
+        <header className="nav-list">
+          <nav ref={navRef} className="nav-list">
             <Link to="/">Home</Link>
-            <Link to="/Freelancing">Frelancing sites</Link>
-
+            {/* <Link to="/remotask">Remotask</Link> */}
+            {/*  <Link to="/Freelancing">Frelancing sites</Link> */}
+            {/* 
             <Link to="/Transcription">Transcription</Link>
 
-            <Link to="/programming">Programming</Link>
+            <Link to="/programming">Programming</Link> */}
+            <Link to="/categories">Categories</Link>
             <button onClick={showNavBar} className="nav-btn nav-close-btn">
               Close
             </button>
