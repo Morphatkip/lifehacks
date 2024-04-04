@@ -24,7 +24,9 @@ function Navbar() {
         <div className="brand">
           <img src={Logo} alt="Logo" className="logo" />{" "}
           {/* Added logo image */}
-          <Link to="/">Firetipsedu</Link>
+          <Link to="/" className="text-light">
+            Firetipsedu
+          </Link>
         </div>
         <header className="nav-list">
           <nav ref={navRef} className="nav-list">

@@ -14,14 +14,12 @@ import userProfileZip from "../assets/downloads/zip/user-profile.zip";
 function Categories() {
   return (
     <div>
-      <div class="page-heading">
+      <div className="page-heading">
         <Navbar />
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 offset-lg-2 header-text">
-              <h2>
-                Discover all Popular Categories on <em>Firetipedu</em>
-              </h2>
+        <div className="container " style={{ marginTop: "0" }}>
+          <div className="row">
+            <div className="col-lg-8 offset-lg-2 header-text">
+              <h2>All categories</h2>
               <p>
                 You are allowed to freely use Firetipedu design Template for
                 your commercial websites. You are not allowed to redistribute
