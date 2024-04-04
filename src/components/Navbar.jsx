@@ -1,34 +1,34 @@
-import React, { useState } from "react";
-import Logo from "../images/Logo.png";
+import React, { useState, useRef } from "react";
+import Logo from "../assets/images/Logo.png"; // Assuming Logo.png is the path to your logo image
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
 
-import { useRef } from "react";
 function Navbar() {
   const [openLinks, setOpenLinks] = useState(false);
+
   const toggleNavbar = () => {
     setOpenLinks(!openLinks);
   };
+
   const navRef = useRef();
+
   const showNavBar = () => {
     navRef.current.classList.toggle("responsive_nav");
   };
+
   return (
     <div className="nav-container">
-      <div className="d-flex justify-content-between">
+      <div className="d-flex justify-content-between align-items-center">
+        {" "}
+        {/* Added align-items-center for vertical alignment */}
         <div className="brand">
+          <img src={Logo} alt="Logo" className="logo" />{" "}
+          {/* Added logo image */}
           <Link to="/">Firetipsedu</Link>
         </div>
-
         <header className="nav-list">
           <nav ref={navRef} className="nav-list">
             <Link to="/">Home</Link>
-            {/* <Link to="/remotask">Remotask</Link> */}
-            {/*  <Link to="/Freelancing">Frelancing sites</Link> */}
-            {/* 
-            <Link to="/Transcription">Transcription</Link>
-
-            <Link to="/programming">Programming</Link> */}
             <Link to="/categories">Categories</Link>
             <button onClick={showNavBar} className="nav-btn nav-close-btn">
               Close
@@ -43,4 +43,5 @@ function Navbar() {
     </div>
   );
 }
+
 export default Navbar;

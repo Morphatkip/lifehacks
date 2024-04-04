@@ -112,3 +112,8 @@ nav {
   margin-bottom: auto;
   margin-left: 30px;
 }
+
+.logo {
+  width: 90px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}

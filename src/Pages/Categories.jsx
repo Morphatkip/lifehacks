@@ -8,6 +8,8 @@ import Footer from "../components/footer";
 import Holder from "../components/Holder";
 import NavbarImg from "../assets/downloads/images/Navbar-1.png";
 import dashboard1 from "../assets/downloads/zip/dashboard1.zip";
+import userProfileImage from "../assets/downloads/images/user-profile.png";
+import userProfileZip from "../assets/downloads/zip/user-profile.zip";
 
 function Categories() {
   return (
@@ -37,6 +39,20 @@ function Categories() {
           price="Free"
           rating={4.5}
           downloadSrc={dashboard1}
+        >
+          {/* <div>
+            This is additional content passed as children to the Holder
+            component.
+          </div> */}
+          {/* <div>Another div passed as children.</div> */}
+        </Holder>
+
+        <Holder
+          title="User Profile"
+          image={userProfileImage}
+          price="Free"
+          rating={5}
+          downloadSrc={userProfileZip}
         >
           {/* <div>
             This is additional content passed as children to the Holder
