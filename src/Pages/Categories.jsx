@@ -16,7 +16,7 @@ function Categories() {
     <div>
       <div className="page-heading">
         <Navbar />
-        <div className="container " style={{ marginTop: "0" }}>
+        <div className="container ">
           <div className="row">
             <div className="col-lg-8 offset-lg-2 header-text">
               <h2>All categories</h2>
