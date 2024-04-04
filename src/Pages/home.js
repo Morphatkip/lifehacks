@@ -245,13 +245,13 @@ function Home() {
                     <div className="right">
                       <h4>Dashboard components</h4>
                       <span>
-                        <em>126</em> Available Contests
+                        <em>126</em> Available Commponents
                       </span>
                     </div>
                   </div>
                   <div className="thumb">
-                    <img src={Popular01Image} alt="" />
-                    <span className="category">Top Contest</span>
+                    <img src={featured01Image} alt="" />
+                    <span className="category">Downloads</span>
                     <span className="likes">
                       <i className="fa fa-heart"></i> 256
                     </span>
@@ -277,8 +277,8 @@ function Home() {
                     </div>
                   </div>
                   <div className="thumb">
-                    <img src={Popular02Image} alt="" />
-                    <span className="category">Top Contest</span>
+                    <img src={featured02Image} alt="" />
+                    <span className="category">Downloads</span>
                     <span className="likes">
                       <i className="fa fa-heart"></i> 256
                     </span>
@@ -304,8 +304,8 @@ function Home() {
                     </div>
                   </div>
                   <div className="thumb">
-                    <img src={Popular03Image} alt="" />
-                    <span className="category">Top Contest</span>
+                    <img src={featured02Image} alt="" />
+                    <span className="category">Downloads</span>
                     <span className="likes">
                       <i className="fa fa-heart"></i> 256
                     </span>
@@ -331,8 +331,8 @@ function Home() {
                     </div>
                   </div>
                   <div className="thumb">
-                    <img src={Popular04Image} alt="" />
-                    <span className="category">Top Contest</span>
+                    <img src={featured02Image} alt="" />
+                    <span className="category">Downloads</span>
                     <span className="likes">
                       <i className="fa fa-heart"></i> 256
                     </span>
