@@ -11,9 +11,9 @@ function Holder(props) {
   };
 
   return (
-    <div className="container">
+    <div className="container ">
       <div className="m-2">
-        <h1>{props.title}</h1>
+        <h3>{props.title}</h3>
       </div>
       <img src={props.image} alt="" className="border img-fluid m-2" />
       <div className="col-md-6">{props.children}</div>

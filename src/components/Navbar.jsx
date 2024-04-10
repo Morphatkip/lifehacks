@@ -32,6 +32,8 @@ function Navbar() {
           <nav ref={navRef} className="nav-list">
             <Link to="/">Home</Link>
             <Link to="/categories">Categories</Link>
+            <Link to="/about">About us</Link>
+            <Link to="/blog">Blog</Link>
             <button onClick={showNavBar} className="nav-btn nav-close-btn">
               Close
             </button>
