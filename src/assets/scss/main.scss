@@ -1,0 +1,855 @@
+.sticky-top {
+  top: 69.75px;
+}
+.secondfont,
+img {
+  max-width: 100%;
+}
+.tofront {
+  position: relative;
+  z-index: 1;
+}
+.full-width {
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  left: 50%;
+}
+a,
+a:hover {
+  transition: all 0.2s;
+}
+
+.c-pointer:hover {
+  cursor: pointer;
+}
+.z-index-1 {
+  z-index: 1;
+}
+// Typography
+
+// Margins
+.row.gap-y > .col,
+.row.gap-y > [class*="col-"] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.mt-neg5 {
+  margin-top: -5rem;
+}
+.ml-neg5 {
+  margin-left: -5rem;
+}
+
+ul.list-unstyled li {
+  margin-bottom: 0.3rem;
+}
+ol.list-featured {
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 0;
+}
+ol.list-featured li {
+  counter-increment: my-awesome-counter;
+  display: flex;
+  font-size: 0.8rem;
+}
+ol.list-featured li:before {
+  content: "0" counter(my-awesome-counter);
+  font-weight: bold;
+  font-size: 3rem;
+  margin-right: 0.5rem;
+  font-family: "Abril Fatface", serif;
+  line-height: 1;
+}
+
+// Login
+
+// Article
+article {
+  font-family: "sans-serif", "Georgia";
+
+  font-weight: 800;
+  line-height: 1.9;
+  color: black;
+  p,
+  pre,
+  figure,
+  img,
+  blockquote,
+  iframed,
+  embed {
+    margin-bottom: 2rem;
+  }
+  blockquote {
+    padding-left: 40px;
+    margin-left: 0px;
+    font-style: italic;
+    position: relative;
+  }
+  blockquote:before {
+    content: "“";
+    font-family: Georgia;
+    font-size: 8rem;
+    margin: -1rem 2rem 0 -3.9rem;
+    position: absolute;
+    opacity: 1;
+    float: left;
+    line-height: 1;
+  }
+  &:first-letter {
+    float: left;
+    font-size: 5em;
+    line-height: 1;
+    margin: 0 0.2em 0 0;
+    vertical-align: top;
+  }
+}
+
+.spanborder span {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.44);
+  display: inline-block;
+  padding-bottom: 20px;
+  margin-bottom: -1px;
+}
+
+.a2a_default_style .a2a_svg {
+  border-radius: 50% !important;
+  margin-top: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.a2a_default_style .a2a_svg {
+  border-radius: 50% !important;
+  display: block !important;
+  float: none !important;
+  margin-top: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.a2a_svg {
+  height: 40px !important;
+  line-height: 40px !important;
+  width: 40px !important;
+}
+
+#docsarea {
+  h1 {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  h2 {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+  }
+  h1,
+  h2 {
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+  h1 + h2 {
+    padding-top: 0;
+  }
+}
+
+/* JUST SOME STYLES FOR PRE CODES */
+code {
+  font-size: 14px;
+  display: inline-block;
+  line-height: 1.5;
+}
+
+.code-toolbar {
+  position: relative;
+}
+.code-toolbar .toolbar-item a {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  color: #ffffff;
+  background: #333;
+  padding: 0 8px;
+  border-radius: 30px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.code-toolbar .toolbar-item a:hover,
+.code-toolbar .toolbar-item a:focus {
+  background: #ff5684;
+  color: #fff;
+}
+
+#docsarea .alert-orange {
+  color: rgba(255, 255, 255, 0.83);
+}
+#docsarea .alert-orange code {
+  color: #b73b3b;
+}
+#docsarea .alert-orange a {
+  color: inherit;
+  border-bottom: 1px dashed;
+}
+
+ul.ascii,
+ul.ascii ul {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+ul.ascii li {
+  margin: 0;
+  padding: 0;
+}
+
+/* level 1 */
+ul.ascii > li::before {
+  content: "";
+}
+
+/* level 2 */
+ul.ascii > li > ul > li::before {
+  content: "├──\00a0";
+}
+ul.ascii > li > ul > li:last-child::before {
+  content: "└──\00a0";
+}
+
+/* level 3 */
+ul.ascii > li > ul > li > ul > li::before {
+  content: "│\00a0\00a0\00a0├──\00a0";
+}
+ul.ascii > li > ul > li > ul > li:last-child::before {
+  content: "│\00a0\00a0\00a0└──\00a0";
+}
+ul.ascii > li > ul > li:last-child > ul > li::before {
+  content: "\00a0\00a0\00a0\00a0├──\00a0";
+}
+ul.ascii > li > ul > li:last-child > ul > li:last-child::before {
+  content: "\00a0\00a0\00a0\00a0└──\00a0";
+}
+
+/* level 4 */
+ul.ascii > li > ul > li > ul > li > ul > li::before {
+  content: "│\00a0\00a0\00a0│\00a0\00a0\00a0├──\00a0";
+}
+ul.ascii > li > ul > li > ul > li > ul > li:last-child::before {
+  content: "│\00a0\00a0\00a0│\00a0\00a0\00a0└──\00a0";
+}
+ul.ascii > li > ul > li > ul > li:last-child > ul > li::before {
+  content: "│\00a0\00a0\00a0\00a0\00a0\00a0\00a0├──\00a0";
+}
+ul.ascii > li > ul > li > ul > li:last-child > ul > li:last-child::before {
+  content: "│\00a0\00a0\00a0\00a0\00a0\00a0\00a0└──\00a0";
+}
+ul.ascii > li > ul > li:last-child > ul > li > ul > li::before {
+  content: "\00a0\00a0\00a0\00a0│\00a0\00a0\00a0├──\00a0";
+}
+ul.ascii > li > ul > li:last-child > ul > li > ul > li:last-child::before {
+  content: "\00a0\00a0\00a0\00a0│\00a0\00a0\00a0└──\00a0";
+}
+ul.ascii > li > ul > li:last-child > ul > li:last-child > ul > li::before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0├──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child::before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0└──\00a0";
+}
+
+/* level 5 */
+ul.ascii > li > ul > li > ul > li > ul > li > ul > li::before {
+  content: "│\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0├──\00a0";
+}
+ul.ascii > li > ul > li > ul > li > ul > li > ul > li:last-child::before {
+  content: "│\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0└──\00a0";
+}
+ul.ascii > li > ul > li > ul > li > ul > li:last-child > ul > li::before {
+  content: "│\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0├──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child::before {
+  content: "│\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0└──\00a0";
+}
+ul.ascii > li > ul > li > ul > li:last-child > ul > li > ul > li::before {
+  content: "│\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0├──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li
+  > ul
+  > li:last-child::before {
+  content: "│\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0└──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li::before {
+  content: "│\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0├──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child::before {
+  content: "│\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0└──\00a0";
+}
+ul.ascii > li > ul > li:last-child > ul > li > ul > li > ul > li::before {
+  content: "\00a0\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0├──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li:last-child::before {
+  content: "\00a0\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0└──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li::before {
+  content: "\00a0\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0├──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child::before {
+  content: "\00a0\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0└──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li
+  > ul
+  > li::before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0├──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li
+  > ul
+  > li:last-child::before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0└──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li::before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0├──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child::before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0└──\00a0";
+}
+
+/* level 6 */
+ul.ascii > li > ul > li > ul > li > ul > li > ul > li > ul > li::before {
+  content: "│\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0├──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li:last-child::before {
+  content: "│\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0└──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li::before {
+  content: "│\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0├──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child::before {
+  content: "│\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0└──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li
+  > ul
+  > li::before {
+  content: "│\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0├──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li
+  > ul
+  > li:last-child::before {
+  content: "│\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0└──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li::before {
+  content: "│\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0├──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child::before {
+  content: "│\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0└──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li::before {
+  content: "│\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0├──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li:last-child::before {
+  content: "│\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0└──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li::before {
+  content: "│\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0├──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child::before {
+  content: "│\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0└──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li
+  > ul
+  > li::before {
+  content: "│\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0├──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li
+  > ul
+  > li:last-child::before {
+  content: "│\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0└──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li::before {
+  content: "│\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0├──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child::before {
+  content: "│\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0└──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li::before {
+  content: "\00a0\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0├──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li:last-child::before {
+  content: "\00a0\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0└──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li::before {
+  content: "\00a0\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0├──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child::before {
+  content: "\00a0\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0└──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li
+  > ul
+  > li::before {
+  content: "\00a0\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0├──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li
+  > ul
+  > li:last-child::before {
+  content: "\00a0\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0└──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li::before {
+  content: "\00a0\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0├──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child::before {
+  content: "\00a0\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0└──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li::before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0├──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li:last-child::before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0└──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li::before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0├──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child::before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0└──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li
+  > ul
+  > li::before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0├──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li
+  > ul
+  > li:last-child::before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0└──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li::before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0├──\00a0";
+}
+ul.ascii
+  > li
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child::before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0└──\00a0";
+}
+
+// END DOCS FOR DEMO ONLY

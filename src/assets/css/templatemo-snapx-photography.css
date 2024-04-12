@@ -167,12 +167,6 @@ ul {
   margin-bottom: 0px;
 }
 
-p {
-  font-size: 15px;
-  line-height: 28px;
-  color: #7a7a7a;
-}
-
 img {
   width: 100%;
   overflow: hidden;
@@ -255,7 +249,7 @@ body {
 }
 
 section {
-  margin-top: 120px;
+  margin-top: 0px;
 }
 
 .section-heading {

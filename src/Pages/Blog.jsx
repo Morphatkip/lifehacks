@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import featuredImage01 from "../assets/images/featured-01.jpg";
 import AiBlogImg from "../assets/images/AiBlog.jpg";
+import BlockChainImage from "../assets/images/BlockChain.jpg";
 import "../assets/css/blog.css";
 // Import Swiper React components
 import {
@@ -34,7 +35,7 @@ function Blog() {
   }, []);
   return (
     <div>
-      <div className="bg-secondary">
+      <div className="bg-dark">
         <Navbar />
       </div>
 
@@ -70,6 +71,30 @@ function Blog() {
                             century. What was once the stuff of science fiction
                             has now become an integral part of our daily lives,
                             transforming industries,
+                          </p>
+                        </div>
+                      </Link>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <div className="swiper-slide">
+                      <Link
+                        to={`/blog/${"blockchain-technology"}`}
+                        className="img-bg d-flex align-items-end"
+                        style={{
+                          backgroundImage: `url(${BlockChainImage})`,
+                        }}
+                      >
+                        <div className="img-bg-inner text-light">
+                          <h2>
+                            Unraveling the Complex World of Blockchain
+                            Technology
+                          </h2>
+                          <p>
+                            In the last decade, blockchain technology has
+                            emerged as one of the most groundbreaking
+                            advancements in the field of information technology.
                           </p>
                         </div>
                       </Link>
@@ -214,20 +239,21 @@ function Blog() {
               <div className="row g-5">
                 <div className="col-lg-4 border-start custom-border">
                   <div className="post-entry-1">
-                    <Link to="/blog/pve8d3x">
-                      <img src={AiBlogImg} alt="" className="img-fluid" />
+                    <Link to="/blog/blockchain-technology">
+                      <img src={BlockChainImage} alt="" className="img-fluid" />
                     </Link>
                     <div className="post-meta">
                       <span className="date">technology</span>
                       <span className="mx-1">& AI;</span>
-                      <span>APR 5th '24</span>
+                      <span>APR 12th '24</span>
                     </div>
                     <h2>
-                      <Link to="/blog/pve8d3x">
-                        The Evolution of Artifical Intelligence
+                      <Link to="/blog/blockchain-technology">
+                        Unraveling the Complex World of Blockchain Technology
                       </Link>
                     </h2>
                   </div>
+
                   {/*   <div className="post-entry-1">
                     <a href="single-post.html">
                       <img src={featuredImage01} alt="" className="img-fluid" />
