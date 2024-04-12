@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import featuredImage01 from "../assets/images/featured-01.jpg";
 import AiBlogImg from "../assets/images/AiBlog.jpg";
 import BlockChainImage from "../assets/images/BlockChain.jpg";
+import CyberSecurityImage from "../assets/images/CyberSecurity.jpg";
 import "../assets/css/blog.css";
 // Import Swiper React components
 import {
@@ -100,6 +101,31 @@ function Blog() {
                       </Link>
                     </div>
                   </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <div className="swiper-slide">
+                      <Link
+                        to={`/blog/${" cyber-security-trends"}`}
+                        className="img-bg d-flex align-items-end"
+                        style={{
+                          backgroundImage: `url(${CyberSecurityImage})`,
+                        }}
+                      >
+                        <div className="img-bg-inner text-light">
+                          <h2>
+                            Cybersecurity Trends: Navigating the Evolving Threat
+                            Landscape
+                          </h2>
+                          <p>
+                            The Internet of Things (IoT) continues to expand the
+                            cybersecurity perimeter with every connected device
+                            serving as a potential entry point for cyberattacks.
+                          </p>
+                        </div>
+                      </Link>
+                    </div>
+                  </SwiperSlide>
+
                   {/*  <SwiperSlide>
                     {" "}
                     <div className="swiper-slide">
@@ -254,22 +280,26 @@ function Blog() {
                     </h2>
                   </div>
 
-                  {/*   <div className="post-entry-1">
-                    <a href="single-post.html">
-                      <img src={featuredImage01} alt="" className="img-fluid" />
-                    </a>
+                  <div className="post-entry-1">
+                    <Link to="/blog/cyber-security-trends">
+                      <img
+                        src={CyberSecurityImage}
+                        alt=""
+                        className="img-fluid"
+                      />
+                    </Link>
                     <div className="post-meta">
-                      <span className="date">Food</span>
+                      <span className="date">cyber Security</span>
                       <span className="mx-1">&bullet;</span>
-                      <span>Jul 17th '22</span>
+                      <span>APR 12th '24</span>
                     </div>
                     <h2>
-                      <a href="single-post.html">
-                        How to Avoid Distraction and Stay Focused During Video
-                        Calls?
-                      </a>
+                      <Link to="/blog/cyber-security-trends">
+                        Cybersecurity Trends: Navigating the Evolving Threat
+                        Landscape
+                      </Link>
                     </h2>
-                  </div> */}
+                  </div>
                   {/*   <div className="post-entry-1">
                     <a href="single-post.html">
                       <img src={featuredImage01} alt="" className="img-fluid" />
