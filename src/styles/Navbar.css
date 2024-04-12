@@ -25,7 +25,7 @@ header {
   justify-content: space-between;
   height: 80px;
   color: var(--textColor);
-
+  z-index: 1000;
   float: right;
 }
 
