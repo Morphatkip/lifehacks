@@ -11,11 +11,14 @@ function Holder(props) {
   };
 
   return (
-    <div className="container border m-3 p-2 holder-container">
+    <div className="container border m-3 p-2 holder-container bg-light ">
       <div className="m-2">
         <h3>{props.title}</h3>
       </div>
-      <img src={props.image} alt="" className="border img-fluid m-2" />
+      <div className="m-3 border p-2">
+        <img src={props.image} alt="" className="border img-fluid m-2" />
+      </div>
+
       <div className="col-md-6">{props.children}</div>
       <div className="col-md-3">
         <h4 className="m-2">Pricing: ${props.price}</h4>

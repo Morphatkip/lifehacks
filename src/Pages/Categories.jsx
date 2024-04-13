@@ -30,9 +30,9 @@ function Categories() {
         </div>
       </div>
 
-      <div className="designs">
+      <div className="designs bg-dark p-3">
         <Holder
-          title="Admin Navbar"
+          title="React Admin Navbar"
           image={NavbarImg}
           price="Free"
           rating={4.5}
@@ -47,7 +47,7 @@ function Categories() {
         </Holder>
 
         <Holder
-          title="User Profile"
+          title="React User Profile"
           image={userProfileImage}
           price="Free"
           rating={5}
