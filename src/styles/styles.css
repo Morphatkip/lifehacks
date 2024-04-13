@@ -176,3 +176,7 @@
 }
 
 /*** Carousel End ***/
+
+.holder-container {
+  border-radius: 25px;
+}

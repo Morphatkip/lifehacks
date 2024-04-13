@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../styles/styles.css";
 function Holder(props) {
   const handleDownload = () => {
     const link = document.createElement("a");
@@ -11,7 +11,7 @@ function Holder(props) {
   };
 
   return (
-    <div className="container ">
+    <div className="container border m-3 p-2 holder-container">
       <div className="m-2">
         <h3>{props.title}</h3>
       </div>

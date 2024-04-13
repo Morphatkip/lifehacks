@@ -38,10 +38,11 @@ function Categories() {
           rating={4.5}
           downloadSrc={dashboard1}
         >
-          {/* <div>
-            This is additional content passed as children to the Holder
-            component.
-          </div> */}
+          <div>
+            A React navbar designed for an admin dashboard, customizable and
+            built using Bootstrap and CSS. It is flexible and responsive,
+            accommodating both small and large screens.
+          </div>
           {/* <div>Another div passed as children.</div> */}
         </Holder>
 
@@ -52,10 +53,12 @@ function Categories() {
           rating={5}
           downloadSrc={userProfileZip}
         >
-          {/* <div>
-            This is additional content passed as children to the Holder
-            component.
-          </div> */}
+          <div>
+            A React user profile component featuring a profile overview, change
+            password functionality, settings, and an edit profile option. It is
+            versatile and can be used for user profiles, admin profiles, and
+            other types of profiles.
+          </div>
           {/* <div>Another div passed as children.</div> */}
         </Holder>
       </div>
