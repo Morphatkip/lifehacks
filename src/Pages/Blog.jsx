@@ -3,6 +3,7 @@ import featuredImage01 from "../assets/images/featured-01.jpg";
 import AiBlogImg from "../assets/images/AiBlog.jpg";
 import BlockChainImage from "../assets/images/BlockChain.jpg";
 import CyberSecurityImage from "../assets/images/CyberSecurity.jpg";
+import AutomotiveImg from "../assets/images/AutomotiveImage.jpg";
 import "../assets/css/blog.css";
 // Import Swiper React components
 import {
@@ -300,22 +301,22 @@ function Blog() {
                       </Link>
                     </h2>
                   </div>
-                  {/*   <div className="post-entry-1">
-                    <a href="single-post.html">
-                      <img src={featuredImage01} alt="" className="img-fluid" />
-                    </a>
+                  <div className="post-entry-1">
+                    <Link to={`/blog/${"automotive-aftermath"}`}>
+                      <img src={AutomotiveImg} alt="" className="img-fluid" />
+                    </Link>
                     <div className="post-meta">
-                      <span className="date">Design</span>
+                      <span className="date">Industry Knowledge</span>
                       <span className="mx-1">&bullet;</span>
-                      <span>Mar 15th '22</span>
+                      <span>APR 15th '24</span>
                     </div>
                     <h2>
-                      <a href="single-post.html">
-                        Why Craigslist Tampa Is One of The Most Interesting
-                        Places On the Web?
-                      </a>
+                      <Link to={`/blog/${"automotive-aftermath"}`}>
+                        Automotive Aftermath: Navigating the New Terrain of the
+                        Auto Industry
+                      </Link>
                     </h2>
-                  </div> */}
+                  </div>
                 </div>
                 {/*   <div className="col-lg-4 border-start custom-border">
                   <div className="post-entry-1">
