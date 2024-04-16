@@ -4,6 +4,7 @@ import AiBlogImg from "../assets/images/AiBlog.jpg";
 import BlockChainImage from "../assets/images/BlockChain.jpg";
 import CyberSecurityImage from "../assets/images/CyberSecurity.jpg";
 import AutomotiveImg from "../assets/images/AutomotiveImage.jpg";
+import TiktokImg from "../assets/images/Tiktok.jpg";
 import "../assets/css/blog.css";
 // Import Swiper React components
 import {
@@ -318,23 +319,23 @@ function Blog() {
                     </h2>
                   </div>
                 </div>
-                {/*   <div className="col-lg-4 border-start custom-border">
+                <div className="col-lg-4 border-start custom-border">
                   <div className="post-entry-1">
-                    <a href="single-post.html">
-                      <img src={featuredImage01} alt="" className="img-fluid" />
-                    </a>
+                    <Link to={`/blog/${"is-tiktok-stealing-my-data"}`}>
+                      <img src={TiktokImg} alt="" className="img-fluid" />
+                    </Link>
                     <div className="post-meta">
-                      <span className="date">Business</span>
+                      <span className="date">Technology </span>
                       <span className="mx-1">&bullet;</span>
-                      <span>Jul 5th '22</span>
+                      <span>APR a6th '24</span>
                     </div>
                     <h2>
-                      <a href="single-post.html">
-                        6 Easy Steps To Create Your Own Cute Merch For Instagram
-                      </a>
+                      <Link to={`/blog/${"is-tiktok-stealing-my-data"}`}>
+                        Is TikTok Really Stealing My Data?
+                      </Link>
                     </h2>
                   </div>
-                  <div className="post-entry-1">
+                  {/*  <div className="post-entry-1">
                     <a href="single-post.html">
                       <img src={featuredImage01} alt="" className="img-fluid" />
                     </a>
@@ -363,8 +364,8 @@ function Blog() {
                         5 Great Startup Tips for Female Founders
                       </a>
                     </h2>
-                  </div>
-                </div> */}
+                  </div> */}
+                </div>
 
                 {/*   Trending Section  */}
                 <div className="col-lg-4">
