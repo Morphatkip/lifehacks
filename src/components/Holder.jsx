@@ -1,9 +1,14 @@
 import React from "react";
+import ReactGA from "react-ga";
 import "../styles/styles.css";
 function Holder(props) {
   const handleDownload = () => {
     // Google Analytics event tracking
-    ga("send", "event", "Downloads", "Component Downloaded", `${props.title}`);
+    ReactGA.event({
+      category: "Downloads",
+      action: "Component Downloaded",
+      label: props.title,
+    });
     const link = document.createElement("a");
     link.href = props.downloadSrc; // Use props.downloadSrc for the download link
     link.download = "your_zip_file.zip";
