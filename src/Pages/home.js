@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Footer from "../components/footer";
 import Navbar from "../components/Navbar";
 import "../assets/css/fontawesome.css";
@@ -11,18 +11,18 @@ import Icon01Image from "../assets/images/icon-01.png";
 import Icon02Image from "../assets/images/icon-02.png";
 import Icon03Image from "../assets/images/icon-03.png";
 import Icon04Image from "../assets/images/icon-04.png";
-import Popular01Image from "../assets/images/popular-01.png";
-import Popular02Image from "../assets/images/popular-02.png";
-import Popular03Image from "../assets/images/popular-03.png";
-import Popular04Image from "../assets/images/popular-04.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate();
+  const handleCategoriesClick = (location) => {
+    navigate(`/template/${location}`);
+  };
   return (
     <div>
       <div>
@@ -46,7 +46,7 @@ function Home() {
                   </p>
                   <div className="buttons">
                     <div className="big-border-button">
-                      <a href="">Explore Firetipsedu</a>
+                      <Link to="/categories">Explore Firetipsedu</Link>
                     </div>
                     {/*  <div className="icon-button">
                       <a href="https://youtube.com/templatemo" target="_blank">
@@ -227,7 +227,7 @@ function Home() {
                 <div className="section-heading">
                   <h6>Our Categories</h6>
                   <h4>
-                    Check Out <em>Popular</em> Contest <em>Categories</em>
+                    Check Out <em>Our</em> <em>Categories</em>
                   </h4>
                 </div>
               </div>
@@ -243,7 +243,12 @@ function Home() {
                       <img src={Icon01Image} alt="" />
                     </div>
                     <div className="right">
-                      <h4>Dashboard components</h4>
+                      <h4
+                        onClick={() => handleCategoriesClick("dashboard")}
+                        style={{ cursor: "pointer" }}
+                      >
+                        Dashboard components
+                      </h4>
                       <span>
                         <em>126</em> Available Commponents
                       </span>
@@ -270,9 +275,16 @@ function Home() {
                       <img src={Icon02Image} alt="" />
                     </div>
                     <div className="right">
-                      <h4>Advanced components</h4>
+                      <h4
+                        onClick={() =>
+                          handleCategoriesClick("advanced-components")
+                        }
+                        style={{ cursor: "pointer" }}
+                      >
+                        Advanced components
+                      </h4>
                       <span>
-                        <em>116</em> Available Contests
+                        <em>116</em> Available Components
                       </span>
                     </div>
                   </div>
@@ -297,9 +309,14 @@ function Home() {
                       <img src={Icon03Image} alt="" />
                     </div>
                     <div className="right">
-                      <h4>Navigation components</h4>
+                      <h4
+                        onClick={() => handleCategoriesClick("navbar")}
+                        style={{ cursor: "pointer" }}
+                      >
+                        Navigation components
+                      </h4>
                       <span>
-                        <em>164</em> Available Contests
+                        <em>164</em> Available Components
                       </span>
                     </div>
                   </div>
@@ -324,9 +341,16 @@ function Home() {
                       <img src={Icon04Image} alt="" />
                     </div>
                     <div className="right">
-                      <h4>Data display components</h4>
+                      <h4
+                        onClick={() =>
+                          handleCategoriesClick("data-display-components")
+                        }
+                        style={{ cursor: "pointer" }}
+                      >
+                        Data display components
+                      </h4>
                       <span>
-                        <em>135</em> Available Contests
+                        <em>135</em> Available Components
                       </span>
                     </div>
                   </div>
