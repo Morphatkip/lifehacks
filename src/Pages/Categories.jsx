@@ -128,6 +128,13 @@ function Categories() {
             downloadSrc={category.downloadSrc}
           >
             <div>{category.description}</div>
+            <a
+              className="m-2"
+              href="https://movie-streaming-app-teal.vercel.app/"
+              target="_blank"
+            >
+              <button className="btn btn-primary">Preview</button>
+            </a>
           </Holder>
         ))}
       </div>
