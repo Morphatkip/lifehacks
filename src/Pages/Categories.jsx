@@ -10,11 +10,14 @@ import Holder from "../components/Holder";
 import NavbarImg from "../assets/downloads/images/Navbar-1.png";
 import Navbar2Img from "../assets/downloads/images/navbar-2.png";
 import Navbar3Img from "../assets/downloads/images/navbar-3.png";
+import MovieAppImg from "../assets/downloads/images/movie-app.png";
 import dashboard1 from "../assets/downloads/zip/dashboard1.zip";
 import userProfileImage from "../assets/downloads/images/user-profile.png";
 import userProfileZip from "../assets/downloads/zip/user-profile.zip";
 import navbar2Zip from "../assets/downloads/zip/navbar-2.zip";
 import navbar3Zip from "../assets/downloads/zip/navbar-3.zip";
+import movieApp from "../assets/downloads/zip/movie-app.zip";
+
 function Categories() {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const location = useLocation();
@@ -80,6 +83,15 @@ function Categories() {
       description:
         "The navigation bar is designed to be responsive, adapting to different screen sizes. On smaller screens, the navigation bar collapses into a toggleable menu accessible via an icon on the right end. Users can easily access the navigation links by toggling the menu with the icon. On hover on the links, a line is animated below the navigation links to provide a visual indication of the active link.",
       category: "navigationComponents",
+    },
+    {
+      title: "Movie Straming Application",
+      image: MovieAppImg,
+      price: "Free",
+      rating: 5,
+      downloadSrc: movieApp,
+      description: "",
+      category: "advancedComponents",
     },
   ];
 
