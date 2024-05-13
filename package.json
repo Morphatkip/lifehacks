@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@paypal/checkout-server-sdk": "^1.0.3",
+    "@paypal/react-paypal-js": "^8.3.0",
     "@paypal/sdk-client": "^4.0.187",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -21,6 +23,7 @@
     "react-tabs": "^6.0.0",
     "react-toastify": "^9.1.1",
     "swiper": "^11.1.0",
+    "url": "^0.11.3",
     "web-vitals": "^2.1.4",
     "webpack": "^5.91.0"
   },

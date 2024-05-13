@@ -1,6 +1,8 @@
 import React from "react";
 import ReactGA from "react-ga";
+import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import "../styles/styles.css";
+
 function Holder(props) {
   const handleDownload = () => {
     // Google Analytics event tracking
@@ -30,6 +32,31 @@ function Holder(props) {
       <div className="col-md-3">
         <h4 className="m-2">Pricing: ${props.price}</h4>
         <h4 className="m-2">Rating: {props.rating} </h4>
+        <PayPalScriptProvider
+          options={{
+            clientId:
+              "AadABTe-JZ6ek7fq4BlRKO8EpGhAFEOENsUgPzCPBpSrMXonkcG5PDG2kCHdWh2PagPJ6M6SFMQZAImL",
+          }}
+        >
+          <PayPalButtons
+            createOrder={(data, actions) => {
+              return actions.order.create({
+                purchase_units: [
+                  {
+                    amount: {
+                      value: "10.00", // Correct currency format
+                    },
+                  },
+                ],
+              });
+            }}
+            onApprove={(data, actions) => {
+              // Handle the payment success
+              handleDownload();
+            }}
+            onError={(err) => console.log(err)}
+          />
+        </PayPalScriptProvider>
       </div>
       <div className="col-md-3">
         <button className="btn btn-primary" onClick={handleDownload}>
