@@ -40,63 +40,7 @@ function Categories() {
       default:
         setSelectedCategory(null);
     }
-    console.log({ path });
   }, [location]);
-
-  const categories = [
-    {
-      title: "React Admin Navbar",
-      image: NavbarImg,
-      price: "Free",
-      rating: 4.5,
-      downloadSrc: dashboard1,
-      description:
-        "A React navbar designed for an admin dashboard, customizable and built using Bootstrap and CSS. It is flexible and responsive, accommodating both small and large screens.",
-      category: "navigationComponents",
-    },
-    {
-      title: "React User Profile",
-      image: userProfileImage,
-      price: "Free",
-      rating: 5,
-      downloadSrc: userProfileZip,
-      description:
-        "A React user profile component featuring a profile overview, change password functionality, settings, and an edit profile option. It is versatile and can be used for user profiles, admin profiles, and other types of profiles.",
-      category: "User Profile",
-    },
-    {
-      title: "Simple Responsive React Navigation Bar",
-      image: Navbar2Img,
-      price: "Free",
-      rating: 5,
-      downloadSrc: navbar2Zip,
-      description:
-        "The navigation bar is designed to be responsive, adapting to different screen sizes. On smaller screens, the navigation bar collapses into a toggleable menu accessible via an icon on the right end. Users can easily access the navigation links by toggling the menu with the icon. To utilize this feature, simply run npm install to install the necessary dependencies for the application.",
-      category: "navigationComponents",
-    },
-    {
-      title: "React Navigation Links Hover Animations",
-      image: Navbar3Img,
-      price: "Free",
-      rating: 5,
-      downloadSrc: navbar3Zip,
-      description:
-        "The navigation bar is designed to be responsive, adapting to different screen sizes. On smaller screens, the navigation bar collapses into a toggleable menu accessible via an icon on the right end. Users can easily access the navigation links by toggling the menu with the icon. On hover on the links, a line is animated below the navigation links to provide a visual indication of the active link.",
-      category: "navigationComponents",
-    },
-    {
-      title: "Movie Straming Application",
-      image: MovieAppImg,
-      price: 40,
-      rating: 5,
-      downloadSrc: movieApp,
-      description: `The Movie website template integrates seamlessly with the themoviedb API, allowing you to access a wealth of movie information. Simply create a free account on themoviedb to obtain your API key, which you'll then replace in the designated variable api_key. This process is entirely free of charge.
-
-      Please note that while the website template itself doesn't support streaming, you can easily source streaming options from servers that permit streaming. To install the website template on your system, use the command npm install or yarn install in your terminal, depending on your preferred package manager.`,
-      category: "advancedComponents",
-      previewLink: "https://movie-streaming-app-teal.vercel.app/",
-    },
-  ];
 
   const filteredCategories = selectedCategory
     ? categories.filter((category) => category.category === selectedCategory)
@@ -130,6 +74,7 @@ function Categories() {
             rating={category.rating}
             downloadSrc={category.downloadSrc}
             previewLink={category.previewLink}
+            id={category.id}
           >
             <div>{category.description}</div>
           </Holder>
@@ -142,3 +87,63 @@ function Categories() {
 }
 
 export default Categories;
+
+export const categories = [
+  {
+    title: "React Admin Navbar",
+    id: 1,
+    image: NavbarImg,
+    price: "Free",
+    rating: 4.5,
+    downloadSrc: dashboard1,
+    description:
+      "A React navbar designed for an admin dashboard, customizable and built using Bootstrap and CSS. It is flexible and responsive, accommodating both small and large screens.",
+    category: "navigationComponents",
+  },
+  {
+    title: "React User Profile",
+    id: 2,
+    image: userProfileImage,
+    price: "Free",
+    rating: 5,
+    downloadSrc: userProfileZip,
+    description:
+      "A React user profile component featuring a profile overview, change password functionality, settings, and an edit profile option. It is versatile and can be used for user profiles, admin profiles, and other types of profiles.",
+    category: "User Profile",
+  },
+  {
+    title: "Simple Responsive React Navigation Bar",
+    id: 3,
+    image: Navbar2Img,
+    price: "Free",
+    rating: 5,
+    downloadSrc: navbar2Zip,
+    description:
+      "The navigation bar is designed to be responsive, adapting to different screen sizes. On smaller screens, the navigation bar collapses into a toggleable menu accessible via an icon on the right end. Users can easily access the navigation links by toggling the menu with the icon. To utilize this feature, simply run npm install to install the necessary dependencies for the application.",
+    category: "navigationComponents",
+  },
+  {
+    title: "React Navigation Links Hover Animations",
+    id: 4,
+    image: Navbar3Img,
+    price: "Free",
+    rating: 5,
+    downloadSrc: navbar3Zip,
+    description:
+      "The navigation bar is designed to be responsive, adapting to different screen sizes. On smaller screens, the navigation bar collapses into a toggleable menu accessible via an icon on the right end. Users can easily access the navigation links by toggling the menu with the icon. On hover on the links, a line is animated below the navigation links to provide a visual indication of the active link.",
+    category: "navigationComponents",
+  },
+  {
+    title: "Movie Streaming Application",
+    id: 5,
+    image: MovieAppImg,
+    price: 40,
+    rating: 5,
+    downloadSrc: movieApp,
+    description: `The Movie website template integrates seamlessly with the themoviedb API, allowing you to access a wealth of movie information. Simply create a free account on themoviedb to obtain your API key, which you'll then replace in the designated variable api_key. This process is entirely free of charge.
+
+    Please note that while the website template itself doesn't support streaming, you can easily source streaming options from servers that permit streaming. To install the website template on your system, use the command npm install or yarn install in your terminal, depending on your preferred package manager.`,
+    category: "advancedComponents",
+    previewLink: "https://movie-streaming-app-teal.vercel.app/",
+  },
+];

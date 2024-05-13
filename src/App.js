@@ -6,6 +6,7 @@ import About from "./Pages/About.jsx";
 import Blog from "./Pages/Blog.jsx";
 import SinglePost from "./Pages/SinglePost.jsx";
 import Preview from "./Pages/Preview.jsx";
+import Templates from "./Pages/Templates.jsx";
 function App() {
   return (
     <Router>
@@ -17,6 +18,7 @@ function App() {
         <Route path="/blog/:postId" element={<SinglePost />} />
         <Route path="/template/:postId" element={<Categories />} />
         <Route path="/categories/preview/:postId" element={<Preview />} />
+        <Route path="/single-template/:templateId" element={<Templates />} />
       </Routes>
     </Router>
   );
