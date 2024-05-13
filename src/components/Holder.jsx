@@ -1,22 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactGA from "react-ga";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import "../styles/styles.css";
 
 function Holder(props) {
+  const [paymentCompleted, setPaymentCompleted] = useState(false);
+
   const handleDownload = () => {
-    // Google Analytics event tracking
-    ReactGA.event({
-      category: "Downloads",
-      action: "Component Downloaded",
-      label: props.title,
-    });
-    const link = document.createElement("a");
-    link.href = props.downloadSrc; // Use props.downloadSrc for the download link
-    link.download = "your_zip_file.zip";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    if (paymentCompleted || props.price === "free") {
+      // Google Analytics event tracking
+      ReactGA.event({
+        category: "Downloads",
+        action: "Component Downloaded",
+        label: props.title,
+      });
+      const link = document.createElement("a");
+      link.href = props.downloadSrc; // Use props.downloadSrc for the download link
+      link.download = "your_zip_file.zip";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } else {
+      alert("Please complete the payment to download the file.");
+    }
   };
 
   return (
@@ -44,7 +50,7 @@ function Holder(props) {
                 purchase_units: [
                   {
                     amount: {
-                      value: "10.00", // Correct currency format
+                      value: props.price, // Correct currency format
                     },
                   },
                 ],
@@ -52,6 +58,7 @@ function Holder(props) {
             }}
             onApprove={(data, actions) => {
               // Handle the payment success
+              setPaymentCompleted(true);
               handleDownload();
             }}
             onError={(err) => console.log(err)}

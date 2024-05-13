@@ -87,7 +87,7 @@ function Categories() {
     {
       title: "Movie Straming Application",
       image: MovieAppImg,
-      price: "Free",
+      price: 40,
       rating: 5,
       downloadSrc: movieApp,
       description: `The Movie website template integrates seamlessly with the themoviedb API, allowing you to access a wealth of movie information. Simply create a free account on themoviedb to obtain your API key, which you'll then replace in the designated variable api_key. This process is entirely free of charge.
