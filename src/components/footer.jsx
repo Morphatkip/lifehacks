@@ -19,6 +19,7 @@ class Footer extends Component {
               <p className="mb-0">
                 &copy; {new Date().getFullYear()} Firetipsedu
               </p>
+              <p>You can reach us at firetipsedu@gmail.com </p>
             </div>
             <div className="col-12 col-md-4 text-center">
               <button className="btn btn-link" onClick={this.scrollToTop}>
