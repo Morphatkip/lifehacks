@@ -35,6 +35,15 @@ function Holder(props) {
         <button className="btn btn-primary" onClick={handleDownload}>
           Download
         </button>
+        {props.previewLink && (
+          <a
+            className="m-2"
+            href="https://movie-streaming-app-teal.vercel.app/"
+            target="_blank"
+          >
+            <button className="btn btn-primary">Preview</button>
+          </a>
+        )}
       </div>
     </div>
   );

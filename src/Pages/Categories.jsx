@@ -90,8 +90,11 @@ function Categories() {
       price: "Free",
       rating: 5,
       downloadSrc: movieApp,
-      description: "",
+      description: `The Movie website template integrates seamlessly with the themoviedb API, allowing you to access a wealth of movie information. Simply create a free account on themoviedb to obtain your API key, which you'll then replace in the designated variable api_key. This process is entirely free of charge.
+
+      Please note that while the website template itself doesn't support streaming, you can easily source streaming options from servers that permit streaming. To install the website template on your system, use the command npm install or yarn install in your terminal, depending on your preferred package manager.`,
       category: "advancedComponents",
+      previewLink: "https://movie-streaming-app-teal.vercel.app/",
     },
   ];
 
@@ -126,15 +129,9 @@ function Categories() {
             price={category.price}
             rating={category.rating}
             downloadSrc={category.downloadSrc}
+            previewLink={category.previewLink}
           >
             <div>{category.description}</div>
-            <a
-              className="m-2"
-              href="https://movie-streaming-app-teal.vercel.app/"
-              target="_blank"
-            >
-              <button className="btn btn-primary">Preview</button>
-            </a>
           </Holder>
         ))}
       </div>
