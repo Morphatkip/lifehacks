@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ReactGA from "react-ga";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import "../styles/styles.css";
@@ -8,7 +8,7 @@ function Holder(props) {
   const [paymentCompleted, setPaymentCompleted] = useState(false);
 
   const handleDownload = () => {
-    if (paymentCompleted || props.price === "free") {
+    if (paymentCompleted || props.price === "Free") {
       // Google Analytics event tracking
       ReactGA.event({
         category: "Downloads",
@@ -41,32 +41,34 @@ function Holder(props) {
       <div className="col-md-3">
         <h4 className="m-2">Pricing: ${props.price}</h4>
         <h4 className="m-2">Rating: {props.rating} </h4>
-        <PayPalScriptProvider
-          options={{
-            clientId:
-              "AadABTe-JZ6ek7fq4BlRKO8EpGhAFEOENsUgPzCPBpSrMXonkcG5PDG2kCHdWh2PagPJ6M6SFMQZAImL",
-          }}
-        >
-          <PayPalButtons
-            createOrder={(data, actions) => {
-              return actions.order.create({
-                purchase_units: [
-                  {
-                    amount: {
-                      value: props.price, // Correct currency format
+        {props.price !== "Free" && (
+          <PayPalScriptProvider
+            options={{
+              clientId:
+                "AadABTe-JZ6ek7fq4BlRKO8EpGhAFEOENsUgPzCPBpSrMXonkcG5PDG2kCHdWh2PagPJ6M6SFMQZAImL",
+            }}
+          >
+            <PayPalButtons
+              createOrder={(data, actions) => {
+                return actions.order.create({
+                  purchase_units: [
+                    {
+                      amount: {
+                        value: props.price, // Correct currency format
+                      },
                     },
-                  },
-                ],
-              });
-            }}
-            onApprove={(data, actions) => {
-              // Handle the payment success
-              setPaymentCompleted(true);
-              handleDownload();
-            }}
-            onError={(err) => console.log(err)}
-          />
-        </PayPalScriptProvider>
+                  ],
+                });
+              }}
+              onApprove={(data, actions) => {
+                // Handle the payment success
+                setPaymentCompleted(true);
+                handleDownload();
+              }}
+              onError={(err) => console.log(err)}
+            />
+          </PayPalScriptProvider>
+        )}
       </div>
       <div className="col-md-3">
         <button className="btn btn-primary" onClick={handleDownload}>
