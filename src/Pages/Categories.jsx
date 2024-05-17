@@ -11,12 +11,14 @@ import NavbarImg from "../assets/downloads/images/Navbar-1.png";
 import Navbar2Img from "../assets/downloads/images/navbar-2.png";
 import Navbar3Img from "../assets/downloads/images/navbar-3.png";
 import MovieAppImg from "../assets/downloads/images/movie-app.png";
+import blogAppImage from "../assets/downloads/images/awesome-blog.png";
 import dashboard1 from "../assets/downloads/zip/dashboard1.zip";
 import userProfileImage from "../assets/downloads/images/user-profile.png";
 import userProfileZip from "../assets/downloads/zip/user-profile.zip";
 import navbar2Zip from "../assets/downloads/zip/navbar-2.zip";
 import navbar3Zip from "../assets/downloads/zip/navbar-3.zip";
 import movieApp from "../assets/downloads/zip/movie-app.zip";
+import blogApp from "../assets/downloads/zip/awesome-blog.zip";
 
 function Categories() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -145,5 +147,16 @@ export const categories = [
     Please note that while the website template itself doesn't support streaming, you can easily source streaming options from servers that permit streaming. To install the website template on your system, use the command npm install or yarn install in your terminal, depending on your preferred package manager.`,
     category: "advancedComponents",
     previewLink: "https://movie-streaming-app-teal.vercel.app/",
+  },
+  {
+    title: "Awesome Blog",
+    id: 6,
+    image: blogAppImage,
+    price: 10,
+    rating: 5,
+    downloadSrc: blogApp,
+    description: ``,
+    category: "advancedComponents",
+    previewLink: "https://awwesome-blog-react.vercel.app/",
   },
 ];
