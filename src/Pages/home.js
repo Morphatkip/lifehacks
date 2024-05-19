@@ -39,14 +39,14 @@ function Home() {
                     <em>Templates</em>
                   </h2>
                   <p>
-                    Firetipsedu provides professional React templates and
+                    Design Themes Hub. provides professional React templates and
                     components that are fully customizable or ready to use out
                     of the box. They are suitable for both commercial and
                     personal use.
                   </p>
                   <div className="buttons">
                     <div className="big-border-button">
-                      <Link to="/categories">Explore Firetipsedu</Link>
+                      <Link to="/categories">Explore Design Themes Hub</Link>
                     </div>
                     {/*  <div className="icon-button">
                       <a href="https://youtube.com/templatemo" target="_blank">

@@ -17,7 +17,7 @@ class Footer extends Component {
           <div className="row">
             <div className="col-12 col-md-4">
               <p className="mb-0">
-                &copy; {new Date().getFullYear()} Firetipsedu
+                &copy; {new Date().getFullYear()} designthemeshub
               </p>
               <p>You can reach us at firetipsedu@gmail.com </p>
             </div>

@@ -55,7 +55,7 @@ function Categories() {
         <div className="container ">
           <div className="row">
             <div className="col-lg-8 offset-lg-2 header-text">
-              <h2>All categories</h2>
+              <h2>React Themes and Templates</h2>
               <p>
                 You are allowed to freely use Firetipedu design Template for
                 your commercial websites. You are not allowed to redistribute
