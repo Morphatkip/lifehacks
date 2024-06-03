@@ -18,7 +18,7 @@ function App() {
         <Route path="/blog/:postId" element={<SinglePost />} />
         <Route path="/template/:postId" element={<Categories />} />
         <Route path="/categories/preview/:postId" element={<Preview />} />
-        {/* <Route path="/single-template/:templateId" element={<Templates />} /> */}
+        <Route path="/single-template/:templateId" element={<Templates />} />
       </Routes>
     </Router>
   );
