@@ -25,7 +25,7 @@ function Navbar() {
           <img src={Logo} alt="Logo" className="logo" />{" "}
           {/* Added logo image */}
           <Link to="/" className="text-light">
-            Firetipsedu
+            Design Themes Hub
           </Link>
         </div>
         <header className="nav-list">
