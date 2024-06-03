@@ -14,7 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/categories" element={<Categories />} />
         <Route path="/about" element={<About />} />
-        {/*  <Route path="/blog" element={<Blog />} /> */}
+        <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:postId" element={<SinglePost />} />
         <Route path="/template/:postId" element={<Categories />} />
         <Route path="/categories/preview/:postId" element={<Preview />} />
