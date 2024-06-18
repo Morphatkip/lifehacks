@@ -14,11 +14,13 @@ import MovieAppImg from "../assets/downloads/images/movie-app.png";
 import blogAppImage from "../assets/downloads/images/awesome-blog.png";
 import dashboard1 from "../assets/downloads/zip/dashboard1.zip";
 import userProfileImage from "../assets/downloads/images/user-profile.png";
+import tourismImage from "../assets/downloads/images/user-profile.png";
 import userProfileZip from "../assets/downloads/zip/user-profile.zip";
 import navbar2Zip from "../assets/downloads/zip/navbar-2.zip";
 import navbar3Zip from "../assets/downloads/zip/navbar-3.zip";
 import movieApp from "../assets/downloads/zip/movie-app.zip";
 import blogApp from "../assets/downloads/zip/awesome-blog.zip";
+import tourismZip from "../assets/downloads/zip/tourism.zip";
 
 function Categories() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -57,9 +59,9 @@ function Categories() {
             <div className="col-lg-8 offset-lg-2 header-text">
               <h2>React Themes and Templates</h2>
               <p>
-                You are allowed to freely use Firetipedu design Template for
-                your commercial websites. You are not allowed to redistribute
-                the template on any other template websites.
+                You are allowed to freely use our design Template for your
+                commercial websites. You are not allowed to redistribute the
+                template on any other template websites.
               </p>
             </div>
           </div>
@@ -158,5 +160,16 @@ export const categories = [
     description: ``,
     category: "advancedComponents",
     previewLink: "https://awwesome-blog-react.vercel.app/",
+  },
+  {
+    title: "Tourismi website",
+    id: 7,
+    image: tourismImage,
+    price: 15,
+    rating: 5,
+    downloadSrc: tourismZip,
+    description: ``,
+    category: "advancedComponents",
+    previewLink: "https://tourism-vert.vercel.app/",
   },
 ];
