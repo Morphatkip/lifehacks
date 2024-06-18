@@ -14,7 +14,7 @@ import MovieAppImg from "../assets/downloads/images/movie-app.png";
 import blogAppImage from "../assets/downloads/images/awesome-blog.png";
 import dashboard1 from "../assets/downloads/zip/dashboard1.zip";
 import userProfileImage from "../assets/downloads/images/user-profile.png";
-import tourismImage from "../assets/downloads/images/user-profile.png";
+import tourismImage from "../assets/downloads/images/tourism.png";
 import userProfileZip from "../assets/downloads/zip/user-profile.zip";
 import navbar2Zip from "../assets/downloads/zip/navbar-2.zip";
 import navbar3Zip from "../assets/downloads/zip/navbar-3.zip";
@@ -162,7 +162,7 @@ export const categories = [
     previewLink: "https://awwesome-blog-react.vercel.app/",
   },
   {
-    title: "Tourismi website",
+    title: "Tourism website",
     id: 7,
     image: tourismImage,
     price: 15,
