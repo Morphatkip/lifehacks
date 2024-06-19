@@ -5,8 +5,6 @@ import "../assets/css/fontawesome.css";
 import "../assets/css/templatemo-snapx-photography.css";
 import "../assets/css/owl.css";
 import "../assets/css/animate.css";
-import featured01Image from "../assets/images/featured-01.jpg";
-import featured02Image from "../assets/images/featured-02.jpg";
 import Icon01Image from "../assets/images/icon-01.png";
 import Icon02Image from "../assets/images/icon-02.png";
 import Icon03Image from "../assets/images/icon-03.png";
@@ -78,7 +76,7 @@ function Home() {
                         <div className="thumb">
                           <img
                             style={{ height: "200px", width: "auto" }}
-                            src={featured01Image}
+                            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             alt=""
                           />
                           <div className="hover-effect">
@@ -112,13 +110,13 @@ function Home() {
                         <div className="thumb">
                           <img
                             style={{ height: "200px", width: "auto" }}
-                            src={featured02Image}
+                            src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cG9pbnQlMjBvZiUyMHNhbGVzfGVufDB8fDB8fHww"
                             alt=""
                           />
                           <div className="hover-effect">
                             <div className="content">
                               <h4>
-                                Point of sales
+                                Navigation component
                                 <i className="fa fa-star"></i>
                                 <i className="fa fa-star"></i>
                                 <i className="fa fa-star"></i>
@@ -148,13 +146,13 @@ function Home() {
                         <div className="thumb">
                           <img
                             style={{ height: "200px", width: "auto" }}
-                            src={featured02Image}
+                            src="https://images.unsplash.com/photo-1530435460869-d13625c69bbf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2Vic2l0ZSUyMHRlbXBsYXRlfGVufDB8fDB8fHww"
                             alt=""
                           />
                           <div className="hover-effect">
                             <div className="content">
                               <h4>
-                                Point of sales system
+                                Website template
                                 <i className="fa fa-star"></i>
                                 <i className="fa fa-star"></i>
                                 <i className="fa fa-star"></i>
@@ -183,13 +181,13 @@ function Home() {
                         <div className="thumb">
                           <img
                             style={{ height: "200px", width: "auto" }}
-                            src={featured01Image}
+                            src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGF0YSUyMGRpc3BsYXklMjBjb21wb25lbnR8ZW58MHx8MHx8fDA%3D"
                             alt=""
                           />
                           <div className="hover-effect">
                             <div className="content">
                               <h4>
-                                Dashboard
+                                Data display component
                                 <i className="fa fa-star"></i>
                                 <i className="fa fa-star"></i>
                                 <i className="fa fa-star"></i>
@@ -255,7 +253,10 @@ function Home() {
                     </div>
                   </div>
                   <div className="thumb">
-                    <img src={featured01Image} alt="" />
+                    <img
+                      src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      alt=""
+                    />
                     <span className="category">Downloads</span>
                     <span className="likes">
                       <i className="fa fa-heart"></i> 256
@@ -281,7 +282,7 @@ function Home() {
                         }
                         style={{ cursor: "pointer" }}
                       >
-                        Advanced components
+                        Website components
                       </h4>
                       <span>
                         <em>116</em> Available Components
@@ -289,7 +290,10 @@ function Home() {
                     </div>
                   </div>
                   <div className="thumb">
-                    <img src={featured02Image} alt="" />
+                    <img
+                      src="https://images.unsplash.com/photo-1530435460869-d13625c69bbf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2Vic2l0ZSUyMHRlbXBsYXRlfGVufDB8fDB8fHww"
+                      alt=""
+                    />
                     <span className="category">Downloads</span>
                     <span className="likes">
                       <i className="fa fa-heart"></i> 256
@@ -321,7 +325,10 @@ function Home() {
                     </div>
                   </div>
                   <div className="thumb">
-                    <img src={featured02Image} alt="" />
+                    <img
+                      src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cG9pbnQlMjBvZiUyMHNhbGVzfGVufDB8fDB8fHww"
+                      alt=""
+                    />
                     <span className="category">Downloads</span>
                     <span className="likes">
                       <i className="fa fa-heart"></i> 256
@@ -355,7 +362,10 @@ function Home() {
                     </div>
                   </div>
                   <div className="thumb">
-                    <img src={featured02Image} alt="" />
+                    <img
+                      src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGF0YSUyMGRpc3BsYXklMjBjb21wb25lbnR8ZW58MHx8MHx8fDA%3D"
+                      alt=""
+                    />
                     <span className="category">Downloads</span>
                     <span className="likes">
                       <i className="fa fa-heart"></i> 256

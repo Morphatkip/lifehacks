@@ -54,7 +54,7 @@ function Holder(props) {
                   purchase_units: [
                     {
                       amount: {
-                        value: props.price, // Correct currency format
+                        value: props.price,
                       },
                     },
                   ],
