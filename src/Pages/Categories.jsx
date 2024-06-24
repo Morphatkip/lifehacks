@@ -105,8 +105,7 @@ export const categories = [
     description:
       "This React company website template is designed and built using Tailwind CSS. It is highly flexible and responsive, accommodating both small and large screens. To get started, simply install the dependencies with npm install and run the development server.",
     category: "advancedComponents",
-    previewLink:
-      "https://company-website-h9ay8yc9f-morphats-projects.vercel.app/",
+    previewLink: "https://company-website-alpha-six.vercel.app/",
   },
   {
     title: "React Admin Navbar",
