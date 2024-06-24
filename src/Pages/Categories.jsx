@@ -15,12 +15,14 @@ import blogAppImage from "../assets/downloads/images/awesome-blog.png";
 import dashboard1 from "../assets/downloads/zip/dashboard1.zip";
 import userProfileImage from "../assets/downloads/images/user-profile.png";
 import tourismImage from "../assets/downloads/images/tourism.png";
+import companyImage from "../assets/downloads/images/company-website.png";
 import userProfileZip from "../assets/downloads/zip/user-profile.zip";
 import navbar2Zip from "../assets/downloads/zip/navbar-2.zip";
 import navbar3Zip from "../assets/downloads/zip/navbar-3.zip";
 import movieApp from "../assets/downloads/zip/movie-app.zip";
 import blogApp from "../assets/downloads/zip/awesome-blog.zip";
 import tourismZip from "../assets/downloads/zip/tourism.zip";
+import companyWebsiteZip from "../assets/downloads/zip/companywebsite.zip";
 
 function Categories() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -93,6 +95,19 @@ function Categories() {
 export default Categories;
 
 export const categories = [
+  {
+    title: "Company website",
+    id: 8,
+    image: companyImage,
+    price: 15,
+    rating: 4.5,
+    downloadSrc: companyWebsiteZip,
+    description:
+      "This React company website template is designed and built using Tailwind CSS. It is highly flexible and responsive, accommodating both small and large screens. To get started, simply install the dependencies with npm install and run the development server.",
+    category: "advancedComponents",
+    previewLink:
+      "https://company-website-h9ay8yc9f-morphats-projects.vercel.app/",
+  },
   {
     title: "React Admin Navbar",
     id: 1,
