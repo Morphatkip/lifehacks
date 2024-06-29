@@ -41,41 +41,21 @@ function Holder(props) {
       <div className="col-md-3">
         <h4 className="m-2">Pricing: ${props.price}</h4>
         <h4 className="m-2">Rating: {props.rating} </h4>
-        {props.price !== "Free" && (
-          <PayPalScriptProvider
-            options={{
-              clientId:
-                "AadABTe-JZ6ek7fq4BlRKO8EpGhAFEOENsUgPzCPBpSrMXonkcG5PDG2kCHdWh2PagPJ6M6SFMQZAImL",
-            }}
-          >
-            <PayPalButtons
-              createOrder={(data, actions) => {
-                return actions.order.create({
-                  purchase_units: [
-                    {
-                      amount: {
-                        value: props.price,
-                      },
-                    },
-                  ],
-                });
-              }}
-              onApprove={(data, actions) => {
-                // Handle the payment success
-                setPaymentCompleted(true);
-                handleDownload();
-              }}
-              onError={(err) => console.log(err)}
-            />
-          </PayPalScriptProvider>
-        )}
       </div>
       <div className="col-md-3">
-        <button className="btn btn-primary" onClick={handleDownload}>
+        <Link to={`/single-template/${props.id}`} state={{ id: props.id }}>
+          <button className="btn btn-primary">Download</button>
+        </Link>
+        {/*  <button className="btn btn-primary" onClick={handleDownload}>
           Download
-        </button>
+        </button> */}
         {props.previewLink && (
-          <a className="m-2" href={props.previewLink} target="_blank">
+          <a
+            className="m-2"
+            href={props.previewLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button className="btn btn-primary">Preview</button>
           </a>
         )}
@@ -90,7 +70,7 @@ export const SingleTemplateHolder = (props) => {
   const [paymentCompleted, setPaymentCompleted] = useState(false);
 
   const handleDownload = () => {
-    if (paymentCompleted || props.price === "free") {
+    if (paymentCompleted || props.price === "Free") {
       // Google Analytics event tracking
       ReactGA.event({
         category: "Downloads",
@@ -103,8 +83,7 @@ export const SingleTemplateHolder = (props) => {
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
-    } else {
-      alert("Please complete the payment to download the file.");
+    } else if (paymentCompleted === false) {
     }
   };
 
@@ -121,12 +100,11 @@ export const SingleTemplateHolder = (props) => {
       <div className="col-md-3">
         <h4 className="m-2">Pricing: ${props.price}</h4>
         <h4 className="m-2">Rating: {props.rating} </h4>
+
         <PayPalScriptProvider
           options={{
             clientId:
-              "AUjaX_AbcDSRxihm7vUgR1RneEZ7aevDakIpxzQTsYBZ5VbfJ8Q7p7JN74Om9rSSQ9I-xN8Lp0A-2rX7",
-            currency: "USD",
-            intent: "capture",
+              "EJI4J7zlsXQBOiYNBWGBdouv_1iHEivGCHBskE_zl2rPpEzs5XKu3qxBm-3o6byhKfqxFNDELopZaJWW",
           }}
         >
           <PayPalButtons
@@ -142,20 +120,40 @@ export const SingleTemplateHolder = (props) => {
               });
             }}
             onApprove={(data, actions) => {
-              console.log(data);
-              setPaymentCompleted(true);
-              handleDownload();
+              return actions.order.capture().then((details) => {
+                setPaymentCompleted(!paymentCompleted);
+
+                setTimeout(handleDownload, 10);
+              });
             }}
-            onError={(err) => console.log(err)}
+            onError={(err) => console.log({ err })}
           />
         </PayPalScriptProvider>
       </div>
       <div className="col-md-3">
-        <button className="btn btn-primary" onClick={handleDownload}>
-          Download
-        </button>
+        {props.price === "Free" ? (
+          <button className="btn btn-primary" onClick={handleDownload}>
+            Download
+          </button>
+        ) : paymentCompleted ? (
+          <button className="btn btn-primary" onClick={handleDownload}>
+            Download
+          </button>
+        ) : (
+          <label className="border m-3 bg-dark text-light">
+            <span className="p-3">
+              Complete payment to begin download automatically
+            </span>
+          </label>
+        )}
+
         {props.previewLink && (
-          <a className="m-2" href={props.previewLink} target="_blank">
+          <a
+            className="m-2"
+            href={props.previewLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button className="btn btn-primary">Preview</button>
           </a>
         )}
