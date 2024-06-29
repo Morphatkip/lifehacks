@@ -125,6 +125,8 @@ export const SingleTemplateHolder = (props) => {
           options={{
             clientId:
               "AUjaX_AbcDSRxihm7vUgR1RneEZ7aevDakIpxzQTsYBZ5VbfJ8Q7p7JN74Om9rSSQ9I-xN8Lp0A-2rX7",
+            currency: "USD",
+            intent: "capture",
           }}
         >
           <PayPalButtons
@@ -133,14 +135,14 @@ export const SingleTemplateHolder = (props) => {
                 purchase_units: [
                   {
                     amount: {
-                      value: props.price, // Correct currency format
+                      value: props.price,
                     },
                   },
                 ],
               });
             }}
             onApprove={(data, actions) => {
-              // Handle the payment success
+              console.log(data);
               setPaymentCompleted(true);
               handleDownload();
             }}

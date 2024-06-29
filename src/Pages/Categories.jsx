@@ -111,7 +111,7 @@ export const categories = [
     title: "React Admin Navbar",
     id: 1,
     image: NavbarImg,
-    price: 0.5,
+    price: 0.01,
     rating: 4.5,
     downloadSrc: dashboard1,
     description:
