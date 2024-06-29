@@ -124,7 +124,7 @@ export const SingleTemplateHolder = (props) => {
         <PayPalScriptProvider
           options={{
             clientId:
-              "AadABTe-JZ6ek7fq4BlRKO8EpGhAFEOENsUgPzCPBpSrMXonkcG5PDG2kCHdWh2PagPJ6M6SFMQZAImL",
+              "AUjaX_AbcDSRxihm7vUgR1RneEZ7aevDakIpxzQTsYBZ5VbfJ8Q7p7JN74Om9rSSQ9I-xN8Lp0A-2rX7",
           }}
         >
           <PayPalButtons
