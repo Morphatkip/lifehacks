@@ -13,7 +13,7 @@ function App() {
     <PayPalScriptProvider
       options={{
         clientId:
-          "EJI4J7zlsXQBOiYNBWGBdouv_1iHEivGCHBskE_zl2rPpEzs5XKu3qxBm-3o6byhKfqxFNDELopZaJWW",
+          "AUjaX_AbcDSRxihm7vUgR1RneEZ7aevDakIpxzQTsYBZ5VbfJ8Q7p7JN74Om9rSSQ9I-xN8Lp0A-2rX7",
       }}
     >
       <Router>
