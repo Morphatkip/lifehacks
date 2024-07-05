@@ -16,6 +16,7 @@ import dashboard1 from "../assets/downloads/zip/dashboard1.zip";
 import userProfileImage from "../assets/downloads/images/user-profile.png";
 import tourismImage from "../assets/downloads/images/tourism.png";
 import companyImage from "../assets/downloads/images/company-website.png";
+import AdminDashboardImage from "../assets/downloads/images/admin-dashboard.png";
 import userProfileZip from "../assets/downloads/zip/user-profile.zip";
 import navbar2Zip from "../assets/downloads/zip/navbar-2.zip";
 import navbar3Zip from "../assets/downloads/zip/navbar-3.zip";
@@ -23,6 +24,7 @@ import movieApp from "../assets/downloads/zip/movie-app.zip";
 import blogApp from "../assets/downloads/zip/awesome-blog.zip";
 import tourismZip from "../assets/downloads/zip/tourism.zip";
 import companyWebsiteZip from "../assets/downloads/zip/companywebsite.zip";
+import AdminDashboardZip from "../assets/downloads/zip/admin-dashboard.zip";
 
 function Categories() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -186,4 +188,20 @@ export const categories = [
     category: "advancedComponents",
     previewLink: "https://tourism-vert.vercel.app/",
   },
+  {
+    title: "Admin dashboard",
+    id: 9,
+    image: AdminDashboardImage,
+    price: 10,
+    rating: 5,
+    downloadSrc: AdminDashboardZip,
+    description: ``,
+    category: "dashboard",
+    previewLink: " https://admin-dashboard-lime-five-40.vercel.app/",
+  },
+
+ 
+
+
+
 ];
