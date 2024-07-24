@@ -11,7 +11,7 @@ function Templates() {
   const { state } = useLocation();
   useEffect(() => {
     const templatePassed = categories.find(
-      (category) => category.id === state.id
+      (category) => category?.id === state.id
     );
     setTemplate(templatePassed);
   }, [state.id]);
