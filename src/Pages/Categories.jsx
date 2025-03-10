@@ -11,6 +11,7 @@ import NavbarImg from "../assets/downloads/images/Navbar-1.png";
 import Navbar2Img from "../assets/downloads/images/navbar-2.png";
 import Navbar3Img from "../assets/downloads/images/navbar-3.png";
 import MovieAppImg from "../assets/downloads/images/movie-app.png";
+import laundry from "../assets/downloads/images/laundry_app.png";
 import blogAppImage from "../assets/downloads/images/awesome-blog.png";
 import dashboard1 from "../assets/downloads/zip/dashboard1.zip";
 import userProfileImage from "../assets/downloads/images/user-profile.png";
@@ -25,6 +26,7 @@ import blogApp from "../assets/downloads/zip/awesome-blog.zip";
 import tourismZip from "../assets/downloads/zip/tourism.zip";
 import companyWebsiteZip from "../assets/downloads/zip/companywebsite.zip";
 import AdminDashboardZip from "../assets/downloads/zip/admin-dashboard.zip";
+import laundryZip from "../assets/downloads/zip/laundry.zip";
 
 function Categories() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -97,7 +99,7 @@ function Categories() {
 export default Categories;
 
 export const categories = [
- /*  {
+  /*  {
     title: "Company website",
     id: 8,
     image: companyImage,
@@ -108,7 +110,19 @@ export const categories = [
       "This React company website template is designed and built using Tailwind CSS. It is highly flexible and responsive, accommodating both small and large screens. To get started, simply install the dependencies with npm install and run the development server.",
     category: "advancedComponents",
     previewLink: "https://company-website-alpha-six.vercel.app/",
-  } */,
+  } */
+  {
+    title: "Laundry (Service) Management application ",
+    id: 9,
+    image: laundry,
+    price: 30,
+    rating: 4.5,
+    downloadSrc: laundryZip,
+    description:
+      "This is an Electron application built with React.js and JavaScript, featuring an SQLite3 database for backend storage. Designed for laundry management and similar services, it streamlines operations with an intuitive interface and efficient data handling.To set up the application, install the required modules using: npm install Then, run the application with: npm run electron-dev Note: The desktop application is the one that interacts with the database. The version running in the browser cannot connect to the database. The default logins are (admin@gmail.com, admin)",
+    category: "advancedComponents",
+    previewLink: "https://youtu.be/QSSupiT2S10",
+  },
   {
     title: "React Admin Navbar",
     id: 1,
@@ -199,9 +213,4 @@ export const categories = [
     category: "dashboard",
     previewLink: " https://admin-dashboard-lime-five-40.vercel.app/",
   },
-
- 
-
-
-
 ];
