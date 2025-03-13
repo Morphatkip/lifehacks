@@ -36,6 +36,7 @@ function Templates() {
       <SingleTemplateHolder
         key={template.title}
         title={template.title}
+        description={template.description}
         image={template.image}
         price={template.price}
         rating={template.rating}

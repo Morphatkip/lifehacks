@@ -9,7 +9,8 @@ import Icon01Image from "../assets/images/icon-01.png";
 import Icon02Image from "../assets/images/icon-02.png";
 import Icon03Image from "../assets/images/icon-03.png";
 import Icon04Image from "../assets/images/icon-04.png";
-
+import personalImg from "../assets/images/featured-03.jpg";
+import socialImg from "../assets/images/featured-02.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -59,7 +60,7 @@ function Home() {
         </div>
         {/*   <!-- ***** Main Banner Area End ***** --> */}
 
-        <section className="featured-items" id="featured-items">
+        {/*    <section className="featured-items" id="featured-items">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
@@ -88,17 +89,7 @@ function Home() {
                                 <i className="fa fa-star"></i>
                                 <i className="fa fa-star"></i> <span>(5)</span>
                               </h4>
-                              {/* <ul>
-                                <li>
-                                  <span>Contest Winner:</span> Vincent Adam
-                                </li>
-                                <li>
-                                  <span>Contest Author:</span> Anthony Soft
-                                </li>
-                                <li>
-                                  <span>Awards:</span> $1.000 + Camera Nikon
-                                </li>
-                              </ul> */}
+                              
                             </div>
                           </div>
                         </div>
@@ -124,17 +115,7 @@ function Home() {
                                 <i className="fa fa-star"></i>
                                 <span>(5)</span>
                               </h4>
-                              {/*  <ul>
-                                <li>
-                                  <span>Contest Winner:</span> Thomas Eddy
-                                </li>
-                                <li>
-                                  <span>Contest Author:</span> Anthony Soft
-                                </li>
-                                <li>
-                                  <span>Awards:</span> $1,200 + Canon EOS R7
-                                </li>
-                              </ul> */}
+                             
                             </div>
                           </div>
                         </div>
@@ -160,17 +141,7 @@ function Home() {
                                 <i className="fa fa-star"></i>
                                 <span>(5)</span>
                               </h4>
-                              {/*   <ul>
-                                <li>
-                                  <span>Contest Winner:</span> Vincent Adam
-                                </li>
-                                <li>
-                                  <span>Contest Author:</span> Anthony Soft
-                                </li>
-                                <li>
-                                  <span>Awards:</span> $1,800 + Canon EOS R6
-                                </li>
-                              </ul> */}
+                              
                             </div>
                           </div>
                         </div>
@@ -195,17 +166,8 @@ function Home() {
                                 <i className="fa fa-star"></i>
                                 <span>(5)</span>
                               </h4>
-                              {/*    <ul>
-                                <li>
-                                  <span>Contest Winner:</span> Thomas Eddy
-                                </li>
-                                <li>
-                                  <span>Contest Author:</span> Anthony Soft
-                                </li>
-                                <li>
-                                  <span>Awards:</span> $8,400 + Canon EOS R1
-                                </li>
-                              </ul> */}
+                             
+                               
                             </div>
                           </div>
                         </div>
@@ -216,24 +178,122 @@ function Home() {
               </div>
             </div>
           </div>
+        </section> */}
+
+        <section className="m-3 p-3">
+          <div className="wt-grid wt-body-max-width wt-pr-xs-1 wt-pl-xs-1 wt-pr-md-2 wt-pl-md-2 wt-pr-lg-3 wt-pl-lg-3 appears-ready">
+            <div className="wt-grid__item-xs-12 wt-pr-xs-1 wt-pl-xs-1 wt-pr-md-2 wt-pl-md-2 wt-pr-lg-3 wt-pl-lg-3">
+              <section
+                className="shoppable-hero wt-mt-xs-4 wt-mt-md-4 shoppable-hero--two-column wt-display-flex-xs"
+                aria-labelledby="shoppable-hero-title"
+              >
+                {/* Primary Hero Section */}
+                <div
+                  data-clg-id="WtCard"
+                  className="wt-card wt-card--contained shoppable-hero-headline shoppable-hero-headline--xs-portrait wt-display-flex-xs wt-width-full wt-flex-grow-xs-1"
+                >
+                  <Link
+                    className="wt-card__action-link"
+                    to="/categories"
+                  ></Link>
+                  <div className="wt-width-full">
+                    <div
+                      className="shoppable-hero-headline__container wt-display-flex-xs wt-overflow-hidden wt-height-full"
+                      style={{ backgroundColor: "#8C8AF0" }}
+                    >
+                      {/* Content Section */}
+                      <div className="shoppable-hero-headline__content wt-p-xs-4 wt-display-flex-xs wt-flex-direction-column-xs wt-flex-gap-xs-1 wt-align-items-center wt-justify-content-center wt-text-center-xs wt-text-black">
+                        <p
+                          id="shoppable-hero-title"
+                          className="wt-text-display"
+                        >
+                          Social Media Made Simple
+                        </p>
+                        <p className="wt-text-title-large">
+                          Beautiful Instagram & TikTok templates to boost
+                          engagement. No design skills needed
+                        </p>
+                        <Link
+                          to="/categories"
+                          type="button"
+                          className="wt-btn shoppable-hero-headline__content-cta wt-mt-xs-3 wt-btn--primary"
+                        >
+                          Shop Now
+                        </Link>
+                      </div>
+
+                      {/* Image Section */}
+                      <div className="shoppable-hero-headline__image shoppable-hero-headline__image--spotlighted wt-flex-grow-xs-1">
+                        <img
+                          data-clg-id="WtImage"
+                          className="wt-height-full wt-object-fit-cover wt-image"
+                          src={socialImg}
+                          alt="A dog birthday celebration with a cake, personalized portrait and red bandana and dog tote."
+                          style={{ aspectRatio: "1.25925925926" }}
+                          fetchpriority="high"
+                          sizes="(max-width: 639px) 100vw, (max-width: 899px) 45vw, (max-width: 1199px) 55vw, 33vw"
+                          srcSet={""}
+                        />
+                        <Link
+                          to="/categories"
+                          type="button"
+                          className="wt-btn shoppable-hero-headline__image-cta wt-btn--primary"
+                        >
+                          Shop now
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Secondary Hero Section (Visible on XL screens) */}
+                <div className="shoppable-hero-section wt-width-full wt-hide-xs wt-show-xl">
+                  <div className="shoppable-hero-page wt-flex-grow-xs-1 wt-flex-basis-xs-full">
+                    <div className="shoppable-hero-page__container wt-height-full">
+                      <div className="wt-card wt-card--contained shoppable-hero-page__item shoppable-hero-page__item--primary shoppable-hero-page__item--primary-gradient wt-display-flex-xs wt-flex-direction-column-xs wt-position-relative wt-justify-content-flex-end">
+                        <Link
+                          className="wt-card__action-link"
+                          to="/categories"
+                          aria-label="Personalized Clothing Shop Now"
+                        ></Link>
+                        <img
+                          data-clg-id="WtImage"
+                          class="wt-height-full wt-object-fit-cover shoppable-hero-page__image wt-z-index-negative-1 wt-rounded-02 wt-image"
+                          src="personalImg"
+                          alt="Personalized Clothing"
+                          style={{ aspectRatio: 1 }}
+                          sizes="400px"
+                          srcset={personalImg}
+                        ></img>
+
+                        <div
+                          className="wt-position-absolute wt-width-full wt-pl-xs-3 wt-pr-xs-3 wt-pb-xs-3"
+                          style={{
+                            bottom: "10px",
+                            left: "0",
+
+                            zIndex: 10,
+                          }}
+                        >
+                          <p className="wt-text-white wt-text-title-larger">
+                            Personalized Designs
+                          </p>
+                          <span className="text-light wt-text-title ">
+                            Shop Now
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
         </section>
 
         <section className="popular-categories">
           <div className="container-fluid">
             <div className="row">
-              <div className="col-lg-6">
-                <div className="section-heading">
-                  <h6>Our Categories</h6>
-                  <h4>
-                    Check Out <em>Our</em> <em>Categories</em>
-                  </h4>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="main-button">
-                  <Link to="/categories">Discover All Categories</Link>
-                </div>
-              </div>
               <div className="col-lg-3 col-sm-6">
                 <div className="popular-item">
                   <div className="top-content">
@@ -380,14 +440,14 @@ function Home() {
           </div>
         </section>
 
-        {/*  <section className="closed-contests">
+        <section className="closed-contests m-3">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
                 <div className="section-heading text-center">
-                  <h6>Closed Photography Contests</h6>
+                  <h6>Popular Digital Downloads</h6>
                   <h4>
-                    <em>Previous Contests</em> With Handpicked <em>Winners</em>
+                    <em>Top-Selling</em> Products With <em>High Ratings</em>
                   </h4>
                 </div>
               </div>
@@ -399,26 +459,26 @@ function Home() {
                   <div className="item">
                     <div className="closed-item">
                       <div className="thumb">
-                        <img src="assets/images/closed-01.jpg" alt="" />
+                        <img src="assets/images/product-01.jpg" alt="" />
                         <span className="winner">
-                          <em>Winner:</em> Anthony Soft
+                          <em>Top Seller:</em> Modern UI Kit
                         </span>
                         <span className="price">
-                          <em>Award :</em> $1,600
+                          <em>Price:</em> $19.99
                         </span>
                       </div>
                       <div className="down-content">
                         <div className="row">
                           <div className="col-7">
                             <h4>
-                              88 Participants <br />
-                              <span>Number Of Artists</span>
+                              1,200+ Downloads <br />
+                              <span>Total Sales</span>
                             </h4>
                           </div>
                           <div className="col-5">
-                            <h4 className="pics">
-                              320 Pictures <br />
-                              <span>Submited Pics</span>
+                            <h4 className="ratings">
+                              ★★★★★ <br />
+                              <span>Customer Rating</span>
                             </h4>
                           </div>
                         </div>
@@ -428,26 +488,26 @@ function Home() {
                   <div className="item">
                     <div className="closed-item">
                       <div className="thumb">
-                        <img src="assets/images/closed-02.jpg" alt="" />
+                        <img src="assets/images/product-02.jpg" alt="" />
                         <span className="winner">
-                          <em>Winner:</em> Anthony Soft
+                          <em>Top Seller:</em> Notion Planner
                         </span>
                         <span className="price">
-                          <em>Award :</em> $4,200
+                          <em>Price:</em> $24.99
                         </span>
                       </div>
                       <div className="down-content">
                         <div className="row">
                           <div className="col-7">
                             <h4>
-                              96 Participants <br />
-                              <span>Number Of Artists</span>
+                              980+ Downloads <br />
+                              <span>Total Sales</span>
                             </h4>
                           </div>
                           <div className="col-5">
-                            <h4 className="pics">
-                              410 Pictures <br />
-                              <span>Submited Pics</span>
+                            <h4 className="ratings">
+                              ★★★★☆ <br />
+                              <span>Customer Rating</span>
                             </h4>
                           </div>
                         </div>
@@ -457,26 +517,26 @@ function Home() {
                   <div className="item">
                     <div className="closed-item">
                       <div className="thumb">
-                        <img src="assets/images/closed-03.jpg" alt="" />
+                        <img src="assets/images/product-03.jpg" alt="" />
                         <span className="winner">
-                          <em>Winner:</em> Anthony Soft
+                          <em>Top Seller:</em> Business Card Templates
                         </span>
                         <span className="price">
-                          <em>Award :</em> $3,200
+                          <em>Price:</em> $14.99
                         </span>
                       </div>
                       <div className="down-content">
                         <div className="row">
                           <div className="col-7">
                             <h4>
-                              74 Participants <br />
-                              <span>Number Of Artists</span>
+                              860+ Downloads <br />
+                              <span>Total Sales</span>
                             </h4>
                           </div>
                           <div className="col-5">
-                            <h4 className="pics">
-                              284 Pictures <br />
-                              <span>Submited Pics</span>
+                            <h4 className="ratings">
+                              ★★★★☆ <br />
+                              <span>Customer Rating</span>
                             </h4>
                           </div>
                         </div>
@@ -487,14 +547,14 @@ function Home() {
               </div>
               <div className="col-lg-12">
                 <div className="border-button text-center">
-                  <a href="contests.html">Browse Open Contests</a>
+                  <Link to="/categories">Browse All Products</Link>
                 </div>
               </div>
             </div>
           </div>
         </section>
- */}
-        {/*    <section className="pricing-plans">
+
+        {/* <section className="pricing-plans">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">

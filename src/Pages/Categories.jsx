@@ -18,6 +18,7 @@ import userProfileImage from "../assets/downloads/images/user-profile.png";
 import tourismImage from "../assets/downloads/images/tourism.png";
 import companyImage from "../assets/downloads/images/company-website.png";
 import AdminDashboardImage from "../assets/downloads/images/admin-dashboard.png";
+import introductionImg from "../assets/downloads/images/introduction cover.png";
 import userProfileZip from "../assets/downloads/zip/user-profile.zip";
 import navbar2Zip from "../assets/downloads/zip/navbar-2.zip";
 import navbar3Zip from "../assets/downloads/zip/navbar-3.zip";
@@ -27,6 +28,7 @@ import tourismZip from "../assets/downloads/zip/tourism.zip";
 import companyWebsiteZip from "../assets/downloads/zip/companywebsite.zip";
 import AdminDashboardZip from "../assets/downloads/zip/admin-dashboard.zip";
 import laundryZip from "../assets/downloads/zip/laundry.zip";
+import IntroductionZip from "../assets/downloads/zip/Introduction to Digital products.pdf";
 
 function Categories() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -56,13 +58,18 @@ function Categories() {
     ? categories.filter((category) => category.category === selectedCategory)
     : categories;
 
+  const truncateText = (text, maxLength = 100) => {
+    if (text.length <= maxLength) return text;
+    return text.substring(0, maxLength).trim() + "...";
+  };
+
   return (
     <div>
       <div className="page-heading">
         <Navbar />
-        <div className="container ">
+        {/*  <div className="container">
           <div className="row">
-            <div className="col-lg-8 offset-lg-2 header-text">
+            <div className="col-lg-8 offset-lg-2 header-text text-center">
               <h2>React Themes and Templates</h2>
               <p>
                 You are allowed to freely use our design Template for your
@@ -71,24 +78,26 @@ function Categories() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
-      <div className="designs bg-dark p-3">
-        {filteredCategories.map((category) => (
-          <Holder
-            key={category.title}
-            title={category.title}
-            image={category.image}
-            price={category.price}
-            rating={category.rating}
-            downloadSrc={category.downloadSrc}
-            previewLink={category.previewLink}
-            id={category.id}
-          >
-            <div>{category.description}</div>
-          </Holder>
-        ))}
+      <div className=" py-4">
+        <div className="row g-4 justify-content-center">
+          {filteredCategories.map((category) => (
+            <div key={category.id} className="col-12 col-sm-6 col-md-4">
+              <Holder
+                title={category.title}
+                image={category.image}
+                price={category.price}
+                downloadSrc={category.downloadSrc}
+                previewLink={category.previewLink}
+                id={category.id}
+              >
+                <div>{truncateText(category.description, 80)}</div>
+              </Holder>
+            </div>
+          ))}
+        </div>
       </div>
 
       <Footer />
@@ -111,6 +120,18 @@ export const categories = [
     category: "advancedComponents",
     previewLink: "https://company-website-alpha-six.vercel.app/",
   } */
+  {
+    title: "The Digital Product Blueprint: A Step-by-Step Guide to Success",
+    id: 10,
+    image: introductionImg,
+    price: 8,
+    rating: 4.5,
+    downloadSrc: IntroductionZip,
+    description:
+      "Unlock the Power of Digital Products. Looking to start an online business with minimal upfront costs? The Digital Product Blueprint: A Beginner's Guide to Digital Products is your step-by-step guide to creating and selling profitable digital products. Learn how to research, create, and market eBooks, online courses, templates, and more—without worrying about inventory or shipping. Whether you're a beginner or an experienced entrepreneur, this guide will help you navigate the world of digital sales and build a scalable income stream.",
+    category: "Ebook",
+    previewLink: "",
+  },
   {
     title: "Laundry (Service) Management application ",
     id: 9,

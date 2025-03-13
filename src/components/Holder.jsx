@@ -5,58 +5,41 @@ import "../styles/styles.css";
 import { Link } from "react-router-dom";
 
 function Holder(props) {
-  const [paymentCompleted, setPaymentCompleted] = useState(false);
-
-  const handleDownload = () => {
-    if (paymentCompleted || props.price === "Free") {
-      // Google Analytics event tracking
-      ReactGA.event({
-        category: "Downloads",
-        action: "Component Downloaded",
-        label: props.title,
-      });
-      const link = document.createElement("a");
-      link.href = props.downloadSrc; // Use props.downloadSrc for the download link
-      link.download = "your_zip_file.zip";
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    } else {
-      alert("Please complete the payment to download the file.");
-    }
-  };
-
   return (
-    <div className="container border m-3 p-2 holder-container bg-light ">
-      <div className="m-2">
-        <Link to={`/single-template/${props.id}`} state={{ id: props.id }}>
-          <h3>{props.title}</h3>
-        </Link>
-      </div>
-      <div className="m-3 border p-2">
-        <img src={props.image} alt="" className="border img-fluid m-2" />
+    <div className="container p-3 holder-container bg-light d-flex flex-column h-100">
+      {/* Image Container */}
+      <div className="image-container border d-flex align-items-center justify-content-center">
+        <img src={props.image} alt="" className="img-fluid" />
       </div>
 
-      <div className="col-md-6">{props.children}</div>
-      <div className="col-md-3">
-        <h4 className="m-2">Pricing: ${props.price}</h4>
-        <h4 className="m-2">Rating: {props.rating} </h4>
-      </div>
-      <div className="col-md-3">
+      {/* Title Below Image */}
+      <div className="text-center mt-3">
         <Link to={`/single-template/${props.id}`} state={{ id: props.id }}>
-          <button className="btn btn-primary">Download</button>
+          <h5 className="title">{props.title}</h5>
         </Link>
-        {/*  <button className="btn btn-primary" onClick={handleDownload}>
-          Download
-        </button> */}
+      </div>
+
+      {/* Description */}
+      <div
+        className="text-truncate flex-grow-1 px-2"
+        style={{ maxHeight: "60px", overflow: "hidden" }}
+      >
+        {props.children}
+      </div>
+
+      {/* Pricing & Rating */}
+      <div className="mt-auto text-center">
+        <h6 className="m-2"> {props.price} $</h6>
+      </div>
+
+      {/* Buttons */}
+      <div className="d-flex justify-content-center gap-2">
+        {/*  <Link to={`/single-template/${props.id}`} state={{ id: props.id }}>
+          <button className="btn btn-primary">Download</button>
+        </Link> */}
         {props.previewLink && (
-          <a
-            className="m-2"
-            href={props.previewLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="btn btn-primary">Preview</button>
+          <a href={props.previewLink} target="_blank" rel="noopener noreferrer">
+            <button className="btn btn-secondary">Preview</button>
           </a>
         )}
       </div>
@@ -71,92 +54,119 @@ export const SingleTemplateHolder = (props) => {
 
   const handleDownload = () => {
     if (paymentCompleted || props.price === "Free") {
-      // Google Analytics event tracking
       ReactGA.event({
         category: "Downloads",
         action: "Component Downloaded",
         label: props.title,
       });
+
       const link = document.createElement("a");
-      link.href = props.downloadSrc; // Use props.downloadSrc for the download link
+      link.href = props.downloadSrc;
       link.download = props.downloadSrc;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
-    } else if (paymentCompleted === false) {
     }
   };
 
   return (
-    <div className="container border m-3 p-2 holder-container bg-light ">
-      <div className="m-2">
-        <h3>{props.title}</h3>
-      </div>
-      <div className="m-3 border p-2">
-        <img src={props.image} alt="" className="border img-fluid m-2" />
-      </div>
-
-      <div className="col-md-6">{props.children}</div>
-      <div className="col-md-3">
-        <h4 className="m-2">Pricing: ${props.price}</h4>
-        <h4 className="m-2">Rating: {props.rating} </h4>
-
-        <PayPalScriptProvider
-          options={{
-            clientId:
-              "AUjaX_AbcDSRxihm7vUgR1RneEZ7aevDakIpxzQTsYBZ5VbfJ8Q7p7JN74Om9rSSQ9I-xN8Lp0A-2rX7",
-          }}
-        >
-          <PayPalButtons
-            createOrder={(data, actions) => {
-              return actions.order.create({
-                purchase_units: [
-                  {
-                    amount: {
-                      value: props.price,
-                    },
-                  },
-                ],
-              });
-            }}
-            onApprove={(data, actions) => {
-              return actions.order.capture().then((details) => {
-                setPaymentCompleted(!paymentCompleted);
-
-                setTimeout(handleDownload, 10);
-              });
-            }}
-            onError={(err) => console.log({ err })}
+    <div className="container p-4 my-4 border rounded shadow-lg bg-white">
+      <div className="row">
+        {/* Left: Product Image */}
+        <div className="col-md-6">
+          <img
+            src={props.image}
+            alt={props.title}
+            className="img-fluid border rounded"
           />
-        </PayPalScriptProvider>
-      </div>
-      <div className="col-md-3">
-        {props.price === "Free" ? (
-          <button className="btn btn-primary" onClick={handleDownload}>
-            Download
-          </button>
-        ) : paymentCompleted ? (
-          <button className="btn btn-primary" onClick={handleDownload}>
-            Download
-          </button>
-        ) : (
-          <label className="border m-3 bg-dark text-light">
-            <span className="p-3">
-              Complete payment to begin download automatically
-            </span>
-          </label>
-        )}
+        </div>
 
-        {props.previewLink && (
-          <a
-            className="m-2"
-            href={props.previewLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="btn btn-primary">Preview</button>
-          </a>
-        )}
+        {/* Right: Product Details */}
+        <div className="col-md-6 d-flex flex-column justify-content-between">
+          <div>
+            <h2 className="mb-3">{props.title}</h2>
+            <p className="text-muted">{props.description}</p>{" "}
+            {/* New Description Section */}
+            <h4 className="mt-3">Price: ${props.price}</h4>
+            <h4>Rating: {props.rating} ⭐</h4>
+          </div>
+
+          {/* Payment and Download Section */}
+          <div className="mt-4 text-center">
+            <PayPalScriptProvider
+              options={{ clientId: process.env.REACT_APP_PAYPAL_CLIENT_ID }}
+            >
+              <div className="d-flex justify-content-center gap-3">
+                {/* PayPal Button */}
+                <div style={{ width: "160px" }}>
+                  <PayPalButtons
+                    style={{ layout: "horizontal", height: 40 }}
+                    fundingSource="paypal" // Show only PayPal
+                    createOrder={(data, actions) =>
+                      actions.order.create({
+                        purchase_units: [{ amount: { value: props.price } }],
+                      })
+                    }
+                    onApprove={(data, actions) =>
+                      actions.order.capture().then(() => {
+                        setPaymentCompleted(true);
+                        setTimeout(handleDownload, 10);
+                      })
+                    }
+                    onError={(err) => console.log(err)}
+                  />
+                </div>
+
+                {/* Credit/Debit Card Button */}
+                <div style={{ width: "160px" }}>
+                  <PayPalButtons
+                    style={{ layout: "horizontal", height: 40 }}
+                    fundingSource="card" // Show only Credit/Debit Card
+                    createOrder={(data, actions) =>
+                      actions.order.create({
+                        purchase_units: [{ amount: { value: props.price } }],
+                      })
+                    }
+                    onApprove={(data, actions) =>
+                      actions.order.capture().then(() => {
+                        setPaymentCompleted(true);
+                        setTimeout(handleDownload, 10);
+                      })
+                    }
+                    onError={(err) => console.log(err)}
+                  />
+                </div>
+              </div>
+            </PayPalScriptProvider>
+
+            {/* Payment Message */}
+            {props.price === "Free" || paymentCompleted ? (
+              <button
+                className="btn btn-success mt-3 px-4"
+                onClick={handleDownload}
+              >
+                Download Now
+              </button>
+            ) : (
+              <p className="text-danger mt-3 fw-bold">
+                🔒 Please complete payment to unlock download.
+              </p>
+            )}
+
+            {/* Preview Button */}
+            {props.previewLink && (
+              <a
+                href={props.previewLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="btn btn-outline-primary mt-2 px-4">
+                  Preview
+                </button>
+              </a>
+            )}
+          </div>
+        </div>
       </div>
     </div>
   );
