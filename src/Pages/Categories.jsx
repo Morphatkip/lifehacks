@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../assets/css/fontawesome.css";
 import "../assets/css/templatemo-snapx-photography.css";
 import "../assets/css/owl.css";
@@ -29,7 +29,7 @@ import companyWebsiteZip from "../assets/downloads/zip/companywebsite.zip";
 import AdminDashboardZip from "../assets/downloads/zip/admin-dashboard.zip";
 import laundryZip from "../assets/downloads/zip/laundry.zip";
 import IntroductionZip from "../assets/downloads/zip/Introduction to Digital products.pdf";
-
+import { Download, Star, Clock, Users } from "lucide-react";
 function Categories() {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const location = useLocation();
@@ -81,7 +81,64 @@ function Categories() {
         </div> */}
       </div>
 
-      <div className=" py-4">
+      <div className="row g-4 m-1">
+        {filteredCategories.map((product) => (
+          <div key={product.id} className="col-12 col-md-6 col-lg-3">
+            <div className="card h-100 product-card shadow-sm">
+              <div className="img-container">
+                <img
+                  src={product.image}
+                  className="card-img-top fixed-img"
+                  alt={product.name}
+                />
+              </div>
+              <div className="card-body d-flex flex-column">
+                <div className="d-flex justify-content-between align-items-center mb-2">
+                  <span className="badge bg-primary">{product.category}</span>
+                  <span className="text-warning d-flex align-items-center">
+                    <Star size={16} className="me-1" />
+                    {product.rating}
+                  </span>
+                </div>
+                <h5 className="card-title">{product.name}</h5>
+                <p className="card-text text-muted small flex-grow-1">
+                  {truncateText(product.description, 80)}
+                </p>
+                <div className="d-flex justify-content-between align-items-center mt-3">
+                  <span className="h5 mb-0">${product.price}</span>
+                  <div className="d-flex align-items-center text-muted small">
+                    <Link
+                      to={`/single-template/${product.id}`}
+                      state={{ id: product.id }}
+                    >
+                      <Download size={16} className="me-1" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="card-footer bg-white border-top-0">
+                {product.previewLink && (
+                  <a
+                    href={product.previewLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="btn btn-primary w-100">Preview</button>
+                  </a>
+                )}
+
+                {!product.previewLink && (
+                  <button className="btn btn-primary w-100 invisible">
+                    Preview
+                  </button>
+                )}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/*   <div className=" py-4">
         <div className="row g-4 justify-content-center">
           {filteredCategories.map((category) => (
             <div key={category.id} className="col-12 col-sm-6 col-md-4">
@@ -98,7 +155,7 @@ function Categories() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
       <Footer />
     </div>

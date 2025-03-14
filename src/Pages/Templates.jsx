@@ -17,7 +17,7 @@ function Templates() {
   }, [templateId]);
 
   if (!template) {
-    return <h2>Template not found</h2>; // Handle missing template gracefully
+    return <h2>Loading ...</h2>; // Handle missing template gracefully
   }
 
   return (
